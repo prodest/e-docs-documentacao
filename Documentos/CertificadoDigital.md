@@ -4,8 +4,10 @@ Um documento assinado digitalmente pode ser capturado no E-Docs.
 
 Para ser aceito, deve atender aos seguintes critérios:
 
-* A assinatura deve ter sido realizada com carimbo do tempo em uma data dentro do período de validade do certificado digital
-* Caso não possua carimbo do tempo, deve ser capturado no E-Docs dentro do período de validade do certificado digital
-* O certificado digital deve ser emitido por uma Autoridade Certificadora subordinada à cadeia de  ICP-Brasil
-* Somente serão consideradas as assinaturas que cobrem todo o documento, e não somente uma página
-* Após a primeira assinatura, nenhuma outra modificação poderá ser realizada no documento a não ser a próximas assinaturas
+* Todas as assinaturas devem cobrir todo o conteúdo do documento
+* Não deve haver alterações em qualquer momento compreendido 2 assinaturas
+* Toda assinatura digital precisa estar íntegra e conter um certificado digital
+* O certificado digital deve ser emitido por uma Autoridade Certificadora subordinada à cadeia de ICP-Brasil
+* Caso a assinatura digital possua um carimbo do tempo (timestamp), o certificado digital mostrar-se deve válido na data da assinatura.
+* Caso a assinatura digital não possua um carimbo do tempo (timestamp), o certificado digital deve mostrar-se válido no momento da captura.
+* O certificado digital não pode ter sido revogado
