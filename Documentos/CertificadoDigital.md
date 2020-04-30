@@ -1,8 +1,11 @@
-Esta funcionalidade permite elaborar um documento diretamente no sistema, usando alguns recursos de edição em HTML. Após elaborado, o documento pode ser pré-visualizado em PDF, antes de ser efetivamente capturado no E-Docs.
+**Documento Assinado Digitalmente**
 
-Pode ser feito, ainda, uso de um modelo configurado, de forma a padronizar os documentos elaborados.
+Um documento assinado digitalmente pode ser capturado no E-Docs.
 
-Um documento elaborado pode ser capturado se houver apenas um assinante, ou entrará em fase de assinatura, aguardando a manifestação dos outros assinantes.
+Para ser aceito, deve atender aos seguintes critérios:
 
-[aaaa]: ../readme.md
-
+* A assinatura deve ter sido realizada com carimbo do tempo em uma data dentro do período de validade do certificado digital
+* Caso não possua carimbo do tempo, deve ser capturado no E-Docs dentro do período de validade do certificado digital
+* O certificado digital deve ser emitido por uma Autoridade Certificadora subordinada à cadeia de  ICP-Brasil
+* Somente serão consideradas as assinaturas que cobrem todo o documento, e não somente uma página
+* Após a primeira assinatura, nenhuma outra modificação poderá ser realizada no documento a não ser a próximas assinaturas

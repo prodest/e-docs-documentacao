@@ -1,3 +1,5 @@
+**Documento Assinado Eletronicamente**
+
 Esta funcionalidade permite assinar eletronicamente um documento diretamente no sistema.
 
 Uma vez elaborado ou feito o upload do PDF, o documento entra **Em Fase de Assinatura**, que é o momento em que ele fica aguardando a manifestação dos assinantes indicados pelo capturador do documento.
@@ -10,5 +12,5 @@ Um assinante indicado poderá:
 
 O capturador do documento Em Fase de Assinatura poderá excluir o documento somente se houver algum assinante indicado que ainda não tenha se manifestado.
 
-Após o último assinante se manifestar, o documento é capturado.
+Após o último assinante se manifestar, o documento é [capturado](Captura.md).
 
