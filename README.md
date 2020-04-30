@@ -6,9 +6,7 @@ As principais funcionalidades do E-Docs são:
 
 - Captura de documentos
 
-  - [Elaboração]: /documentos/elaboração	"Elaboração online"
-
-    
+  - Elaboração online
 
   - Assinatura Eletrônica
 
