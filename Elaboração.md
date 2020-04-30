@@ -4,5 +4,5 @@ Pode ser feito, ainda, uso de um modelo configurado, de forma a padronizar os do
 
 Um documento elaborado pode ser capturado se houver apenas um assinante, ou entrará em fase de assinatura, aguardando a manifestação dos outros assinantes.
 
-[teste]: /README.md
+[aaaa]: ../readme.md
 
