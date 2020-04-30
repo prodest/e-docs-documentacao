@@ -14,5 +14,5 @@ Um documento pode ser capturado pelo sistema de várias origens:
 
 Atualmente, o limite para qualquer tipo de arquivo é de 250Mb.
 
-Um documento capturado possui um registro, composto pelo formato AAAA-XXXXXX, onde AAAA são os 4 dígitos do ano em que ocorreu a captura e XXXXXX são 6 caracteres base30, compostos por letras e/ou números, exceto vogais e Y.
+Um documento capturado possui um registro, composto pelo formato AAAA-XXXXXX, onde AAAA são os 4 dígitos do ano em que ocorreu a captura e XXXXXX são 6 caracteres base30, compostos por letras e/ou números. As vogais e a letra Y foram descartadas para evitar a formação de palavras de baixo calão.
 
