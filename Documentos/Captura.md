@@ -2,7 +2,7 @@
 
 Um documento pode ser capturado pelo sistema de várias origens:
 
-* [Elaboração online](Documentos/Elaboracao.md)
+* [Elaboração online](Elaboracao.md)
 
 * Upload para Assinatura Eletrônica
 
