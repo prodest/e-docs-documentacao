@@ -5,7 +5,7 @@ Sistema de processos administrativos e documentos eletrônicos.
 As principais funcionalidades do E-Docs são:
 
 - Captura de documentos
-  - [Elaboração online]: ./Elaboração.md
+  -  [Elaboração online](Elaboração.md)  
   
     
   
