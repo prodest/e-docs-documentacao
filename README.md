@@ -13,13 +13,8 @@ As principais funcionalidades do E-Docs são:
   
   - [Cópias de documentos eletrônicos ou digitalizados ](Documentos/Copia.md)  
   
-- Encaminhamento de documentos avulsos
-  - Encaminhar
-  - Responder
-  - Complementar
-  - Reencaminhar
-  
-- Processo Administrativo
+- [Encaminhamento de documentos avulsos](Encaminhamentos\Encaminhamento.md)
+-   [Processo Administrativo](Processos\Processo.md) 
   - Autuar
   - Entranhar
   - Desentranhar
@@ -28,4 +23,5 @@ As principais funcionalidades do E-Docs são:
   - Entranhar sem Custódia
   - Ajustar Custódia
   - Encerrar
+
 

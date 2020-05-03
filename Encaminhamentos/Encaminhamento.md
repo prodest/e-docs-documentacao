@@ -17,4 +17,4 @@ Quando um encaminhamento é enviado a um Órgão, Setor ou Grupo, qualquer usuá
 
 Quando o destinatário é um grupo, pode ser necessário tratar individualmente o acesso ao encaminhamento para cada membro do grupo, de forma que a ação um não retire o encaminhamento da caixa dos demais. Para isto, existe a opção de enviar para os **membros** do grupo.
 
-Todo encaminhamento ganha um número de registro, que é igual ao do documento Registro de Encaminhamento gerado no momento do envio. Caso seja necessário [limitar o acesso](../Documentos/AcessoLimitado.md) ao conteúdo registro do encaminhamento (mensagem), isto poderá ser feito tanto no momento do envio quanto posteriormente, no registro de encaminhamento gerado. 
+Todo encaminhamento ganha um número de registro, que é igual ao do documento **Registro de Encaminhamento** gerado no momento do envio. Caso seja necessário [limitar o acesso](../Documentos/AcessoLimitado.md) ao conteúdo registro do encaminhamento (mensagem), isto poderá ser feito tanto no momento do envio quanto posteriormente, no registro de encaminhamento gerado. 
