@@ -4,11 +4,11 @@ Um documento pode ser capturado pelo sistema de várias origens:
 
 * [Elaboração online](Elaboracao.md)
 
-* Upload para [Assinatura Eletrônica](AssinaturaEletronica.md)
+* Upload de PDF para [Assinatura Eletrônica](AssinaturaEletronica.md)
 
-* Upload de Assinatura com [Certificado Digital](CertificadoDigital.md)
+* Upload de PDF com assinado com [Certificado Digital](CertificadoDigital.md)
 
-* Upload de [Cópia](Copia.md) eletrônica ou digitalizada
+* Upload de PDF [Cópia](Copia.md) eletrônica ou digitalizada
 
 * Upload de [áudio ou vídeo](AudioVideo.md)
 
@@ -20,3 +20,4 @@ Um documento pode ser capturado por um cidadão ou servidor.
 
 Todo documento assinado eletronicamente por um servidor deve ser classificado, seguindo um Plano de Classificação.
 
+Caso o documento apresente algum conteúdo sensível, nos termos da legislação, ele deverá ter seu [acesso limitado](AcessoLimitado.md).

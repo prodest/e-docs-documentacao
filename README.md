@@ -1,11 +1,10 @@
 **E-Docs**
 
-Sistema de processos administrativos e documentos eletrônicos. 
+Sistema de processos administrativos e documentos eletrônicos do Governo do Estado do Espírito Santo. 
 
 As principais funcionalidades do E-Docs são:
 
 - [Captura de documentos](Documentos/Captura.md)
-  
   -  [Elaboração online](Documentos/Elaboracao.md)   
   
   - [Assinatura Eletrônica](Documentos/AssinaturaEletronica.md)  

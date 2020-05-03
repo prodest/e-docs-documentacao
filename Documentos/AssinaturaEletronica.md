@@ -10,7 +10,7 @@ Um assinante indicado poderá:
 - Se recusar - Permite se negar a assinar um documento, situação que fará constar a negativa caso o documento seja capturado
 - Bloquear para assinatura - Notifica o capturador do bloqueio, situação em que impede que outros assinantes se manifestem e evita que o documento seja capturado
 
-O capturador do documento Em Fase de Assinatura poderá excluir o documento somente se houver algum assinante indicado que ainda não tenha se manifestado.
+O capturador do documento Em Fase de Assinatura poderá excluir o documento somente se ainda houver algum assinante indicado sem se manifestar.
 
 Após o último assinante se manifestar, o documento é [capturado](Captura.md).
 
