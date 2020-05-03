@@ -4,7 +4,7 @@ O acesso ao conteúdo de um documento pode ser [limitado](AcessoLimitado.md) de 
 
 Credenciamento
 
-- Organizacional - credencia os órgãos por onde o documento passar, para permitir o acesso aos servidores do órgão aos documentos organizacionais. Considera-se que um documento passou pelo órgão quando é:  
+- #Organizacional - credencia os órgãos por onde o documento passar, para permitir o acesso aos servidores do órgão aos documentos organizacionais. Considera-se que um documento passou pelo órgão quando é:  
   - capturado por um papel do órgão
   - assinado por um papel do órgão
   - encaminhado para um órgão ou papel, grupo ou setor dele
