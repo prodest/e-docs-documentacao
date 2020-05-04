@@ -9,7 +9,7 @@ As principais funcionalidades do E-Docs são:
   
   - [Assinatura Eletrônica](Documentos/AssinaturaEletronica.md)  
   
-  - [Assinatura com Certificado Digital ICP-Brasil](Documentos/CertificadoDigital.md)  
+  - [Assinados com Certificado Digital ICP-Brasil](Documentos/CertificadoDigital.md)  
   
   - [Cópias de documentos eletrônicos ou digitalizados ](Documentos/Copia.md)  
 - [Encaminhamento de documentos avulsos](Encaminhamentos/Encaminhamento.md)
