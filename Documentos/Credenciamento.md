@@ -1,6 +1,6 @@
 **Credenciamento de Acesso a Documentos**
 
-O acesso ao conteúdo de um documento pode ser [limitado](AcessoLimitado.md) de acordo com a legislação pertinente. Para os casos onde há sigilo ou classificação da informação, o acesso do documento seguem algumas regras. De acordo com o nível de acesso e o credenciamento do documento, é decidido quem [Pode Ver](PodeVer.md) e  [PodeUsar](PodeUsar.md) um documento.
+Para decidir quem [Pode Ver](PodeVer.md) e [PodeUsar](PodeUsar.md) um documento, são analisadas algumas características do documento, sendo as duas principais o nível de acesso e os credenciamentos gerados. 
 
 Abaixo, os tipos de credenciamento implementados no E-Docs
 
@@ -10,7 +10,7 @@ Credencia os órgãos por onde o documento passar, para permitir o acesso aos se
 
 - capturado por um papel do órgão
 - assinado por um papel do órgão
-- encaminhado para um órgão ou papel, grupo ou setor dele
+- recebido via encaminhamento ou processo por um órgão ou papel, grupo ou setor dele
 - entranhado a um processo sob custódia do órgão ou papel, grupo ou setor dele
 - entranhado a uma autuação feita no órgão ou setor dele
 - entranhado a um despacho feito no/para órgão ou papel, grupo ou setor dele
@@ -22,25 +22,24 @@ Credencia os setores por onde o documento passar, para permitir o acesso aos ser
 
 - capturado por um papel do setor
 - assinado por um papel do setor
-- encaminhado para um setor ou papel/grupo dele
+- recebido via encaminhamento ou processo por um setor ou papel/grupo dele
 - entranhado a um processo sob custódia do setor ou papel/grupo dele
 - entranhado a uma autuação feita no setor
 - entranhado a um despacho feito no/para setor ou papel/grupo dele
 - um termo de ato processual gerado sob custódia do setor ou papel/grupo dele
 
-## Sigiloso 
+## Credenciamento Padrão
 
-Credencia os agentes por onde o documento passar, para permitir o acesso aos documentos sigilosos. Considera-se que o documento passou pelo agente quando é:
+Credencia os agentes por onde o documento passar, para permitir o acesso aos documentos sigilosos. Também é usado para saber quem "recebeu" um documento, seja via encaminhamento ou processo. Considera-se que o documento passou pelo agente quando é:
 
 - capturado por um papel ou cidadão, credenciando o capturador
-- recebido via encaminhamento, credenciando os destinatários
+- recebido via encaminhamento ou processo, credenciando os destinatários
 - entranhado a um processo, credenciando o local onde estava o processo
 - entranhado a uma autuação, credenciando o local da autuação
 - entranhado a um despacho, credenciando o local onde estava e o local para onde está indo o processo
 - um termo de ato processual, credenciando o local onde estava o processo
-- um termo de ajuste de custódia, credenciando o local para onde foi transferido o processo
 
-## Leitura
+## Credenciamento Leitura
 
 Credencia um papel ou cidadão para ter acesso a determinado documento em um determinado nível. Caso haja alteração no nível de acesso do documento, novo credenciamento leitura se faz necessário para o novo nível de acesso do documento, caso não exista. O credenciamento leitura pode ser feito das seguintes formas:
 
