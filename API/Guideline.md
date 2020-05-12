@@ -1,5 +1,11 @@
 **Integração via API - Guideline**
 
+Os métodos disponíveis para utilização via api podem ser consultados [aqui](https://api.e-docs.es.gov.br/swagger).
+
+O ambiente de Treinamento deve ser utilizado para os testes.
+[E-Docs Web - Treinamento](https://treinamento.e-docs.es.gov.br)
+[E-docs Api - Treinamento](https://api.treinamento.e-docs.es.gov.br/)
+
 O Sistema E-Docs faz integração com os seguintes sistemas:
 
 -[Acesso Cidadão](https://acessocidadao.es.gov.br)
@@ -16,7 +22,22 @@ Atualmente o Organograma possui uma integração com o sistema de Recursos Humanos
 O Organograma possui sua API publicada em [aqui](https://api.organograma.es.gov.br).
 
 
-**Step by step:**
+**Primeiros passos:**
 - Adicionar um sistema no Acesso Cidadão
--   Adicionar um App com o fluxo Hybrid, as propriedades destes App serão necessárias para configurar a autenticação dos usuários.
-- ...
+ - Adicionar um App com o fluxo Hybrid, as propriedades destes App serão necessárias para configurar a autenticação dos usuários para que ele possa realizar as operações no E-Docs.
+ - Adicionar um App com o fluxo ClientCredentials, as propriedades destes App serão necessárias para que o sistema faça consultas em outros sistemas, por exemplo o organograma.
+ - Pode ser que seja necessário utilizar métodos que estão disponibilizados via [Api](https://sistemas.es.gov.br/prodest/acessocidadao.webapi/swagger) do Acesso Cidadão.
+- Caso seja necessário obter informações do Organograma será necessário acrescentar o scope ApiOrganograma ao App de fluxo ClientCredentials que foi criado no Acesso Cidadão.
+
+
+**Principais ações do E-Docs**
+= [Documentos](API/Documentos.md)
+ - Capturar
+- [Encaminhamentos](API/Encaminhamentos.md)
+ - Adicionar
+- [Processos](API/Processos.md)
+ - Autuar
+ - Despachar
+ - Entranhar Documentos
+ - Desentranhar Documentos
+ - Encerrar
