@@ -8,13 +8,13 @@ O ambiente de Treinamento deve ser utilizado para os testes.
 
 O Sistema E-Docs faz integração com os seguintes sistemas:
 
--[Acesso Cidadão](https://acessocidadao.es.gov.br)
+- [Acesso Cidadão](https://acessocidadao.es.gov.br)
 
 O Acesso Cidadão é utilizado para tratar as autenticações e autorizações dos usuários.
 
 O Acesso Cidadão possui sua API publicada em [aqui](https://sistemas.es.gov.br/prodest/acessocidadao.webapi/swagger).
 
--[Organograma](https://organograma.es.gov.br)
+- [Organograma](https://organograma.es.gov.br)
 
 O Organograma é utilizado para consultar os Órgãos e Setores nele cadastrados.
 Atualmente o Organograma possui uma integração com o sistema de Recursos Humanos do Governo do Estado do Espírito Santo, onde toda alteração referente a órgão e setor realizada lá é refletida no Orgranograma.
@@ -24,18 +24,18 @@ O Organograma possui sua API publicada em [aqui](https://api.organograma.es.gov.
 
 **Primeiros passos:**
 - Adicionar um sistema no Acesso Cidadão
- - Adicionar um App com o fluxo Hybrid, as propriedades destes App serão necessárias para configurar a autenticação dos usuários para que ele possa realizar as operações no E-Docs.
- - Adicionar um App com o fluxo ClientCredentials, as propriedades destes App serão necessárias para que o sistema faça consultas em outros sistemas, por exemplo o organograma.
- - Pode ser que seja necessário utilizar métodos que estão disponibilizados via [Api](https://sistemas.es.gov.br/prodest/acessocidadao.webapi/swagger) do Acesso Cidadão.
+  - Adicionar um App com o fluxo Hybrid, as propriedades destes App serão necessárias para configurar a autenticação dos usuários para que ele possa realizar as operações no E-Docs.
+  - Adicionar um App com o fluxo ClientCredentials, as propriedades destes App serão necessárias para que o sistema faça consultas em outros sistemas, por exemplo o organograma.
+  - Pode ser que seja necessário utilizar métodos que estão disponibilizados via [Api](https://sistemas.es.gov.br/prodest/acessocidadao.webapi/swagger) do Acesso Cidadão.
 - Caso seja necessário obter informações do Organograma será necessário acrescentar o scope ApiOrganograma ao App de fluxo ClientCredentials que foi criado no Acesso Cidadão.
 
 
 **Principais ações do E-Docs**
-- [Documentos](API/Documentos.md)
+- [Documentos](Documentos.md)
   - Capturar
-- [Encaminhamentos](API/Encaminhamentos.md)
+- [Encaminhamentos](Encaminhamentos.md)
   - Adicionar
-- [Processos](API/Processos.md)
+- [Processos](Processos.md)
   - Autuar
   - Despachar
   - Entranhar Documentos
