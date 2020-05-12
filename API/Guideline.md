@@ -31,13 +31,13 @@ O Organograma possui sua API publicada em [aqui](https://api.organograma.es.gov.
 
 
 **Principais ações do E-Docs**
-= [Documentos](API/Documentos.md)
- - Capturar
+- [Documentos](API/Documentos.md)
+  - Capturar
 - [Encaminhamentos](API/Encaminhamentos.md)
- - Adicionar
+  - Adicionar
 - [Processos](API/Processos.md)
- - Autuar
- - Despachar
- - Entranhar Documentos
- - Desentranhar Documentos
- - Encerrar
+  - Autuar
+  - Despachar
+  - Entranhar Documentos
+  - Desentranhar Documentos
+  - Encerrar
