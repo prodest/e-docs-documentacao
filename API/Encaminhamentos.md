@@ -4,9 +4,7 @@ O Encaminhamento é a forma de Documentos tramitarem sem estarem entranhados a um
 
 **Ações disponíveis:**
 - [Encmainhar](#encaminhar)
-- Inserir um novo Encaminhamento
 - [Consultar](#consultar)
-- Consultar os Encaminhamentos
 
 ### Encaminhar
 Um Encaminhamento pode ser inserido sem referenciar um Encaminhamento Anterior, neste caso ele será o raiz.
