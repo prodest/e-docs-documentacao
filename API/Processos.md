@@ -9,14 +9,14 @@ O Processo possui um custodiante que pode ser:
 - Um Papel (servidor púbico ocupando um cargo ou função), neste caso somente o detentor do Papel poderá realizar os atos processuais.
 
 **Ações disponíveis:**
-- [Autuar](#Autuar)
+- [Autuar](Autuar)
 - [Despachar](#Despachar)
 - [Entranhar Documentos](#Entranhar Documentos)
 - [Desentranhar Documentos](#Desentranhar Documentos)
 - [Encerrar](#Encerrar)
 - [Consultar](#Consultar)
 
-[**Autuar**]
+**#Autuar**
 Um Processo Administrativo passa a existir no momento de sua autuação.
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Processos/Processos_Autuar).
@@ -25,14 +25,14 @@ No momento da autuação poderá ser informados quais documentos já serão entranhad
 
 Todo Processo é autuado na Unidade onde o Papel que fez a autuação está lotado.
 
-[**Despachar**]
+**#Despachar**
 O Despacho é usado para movimentar o Processo Administrativo, fazendo com que o Processo mude de custodiante.
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Processos/Processos_Despachar).
 
 No momento do despacho poderá ser informados quais documentos serão entranhados ao processo.
 
-[**Entranhar Documento**]
+**Entranhar Documento**
 Através desse método é possível entranhar um Documento ao Processo sem que ele sofra uma movimentação.
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Processos/Processos_Entranhar).
@@ -42,7 +42,7 @@ Através desse método é possível desentranhar um Documento que tenha sido entranh
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Processos/Processos_Desentranhar).
 
-- [**Encerrar**]
+[**Encerrar**]
 Após concluidos os tramites do Processo e tendo ele atingido o seu objetivo, encerra-se o Processo.
 
 O Encerramento fará com que o processo seja movimentado para a Unidade que esteja vinculado ao atual custodiante.
