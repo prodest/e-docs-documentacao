@@ -3,12 +3,12 @@
 O Encaminhamento é a forma de Documentos tramitarem sem estarem entranhados a um processo, de forma avulsa.
 
 **Ações disponíveis:**
-- [Encmainhar](#Encaminhar)
+- [Encmainhar](#encaminhar)
 - Inserir um novo Encaminhamento
-- [Consultar](#Consultar)
+- [Consultar](#consultar)
 - Consultar os Encaminhamentos
 
-[**Encaminhar**]
+## Encaminhar
 Um Encaminhamento pode ser inserido sem referenciar um Encaminhamento Anterior, neste caso ele será o raiz.
 
 Um Encaminhamento pode ser inserido referenciando um Encaminhamento Anterior, conforme descrito abaixo:
@@ -18,7 +18,7 @@ Um Encaminhamento pode ser inserido referenciando um Encaminhamento Anterior, co
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Encaminhamentos/Encaminhamentos_Post).
 
-[**Consultar**]
+# Consultar
 Após um Encaminhamento ser inserido ele poderá ser consultado.
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Encaminhamentos/Encaminhamentos_Get).
