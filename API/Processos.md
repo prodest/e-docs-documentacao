@@ -9,14 +9,14 @@ O Processo possui um custodiante que pode ser:
 - Um Papel (servidor púbico ocupando um cargo ou função), neste caso somente o detentor do Papel poderá realizar os atos processuais.
 
 **Ações disponíveis:**
-- [Autuar](Autuar)
+- [Autuar](#Autuar)
 - [Despachar](#Despachar)
 - [Entranhar Documentos](#Entranhar Documentos)
-- [Desentranhar Documentos](#Desentranhar Documentos)
+- [Desentranhar Documentos](#desentranhar-documentos)
 - [Encerrar](#Encerrar)
 - [Consultar](#Consultar)
 
-**#Autuar**
+##**Autuar**
 Um Processo Administrativo passa a existir no momento de sua autuação.
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Processos/Processos_Autuar).
@@ -37,7 +37,7 @@ Através desse método é possível entranhar um Documento ao Processo sem que ele s
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Processos/Processos_Entranhar).
 
-[**Desentranhar Documentos**]
+##**Desentranhar Documentos**
 Através desse método é possível desentranhar um Documento que tenha sido entranhado anteriormente ao Processo. Este ato não movimenta o Processo.
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Processos/Processos_Desentranhar).
