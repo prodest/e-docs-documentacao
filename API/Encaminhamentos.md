@@ -18,7 +18,7 @@ Um Encaminhamento pode ser inserido referenciando um Encaminhamento Anterior, co
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Encaminhamentos/Encaminhamentos_Post).
 
-# Consultar
+### Consultar
 Após um Encaminhamento ser inserido ele poderá ser consultado.
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Encaminhamentos/Encaminhamentos_Get).
