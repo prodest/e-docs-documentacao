@@ -1,4 +1,4 @@
-**Integração via API - Encaminhamentos**
+**[Integração via API](Guideline.md) - Encaminhamentos**
 
 O Encaminhamento é a forma de Documentos tramitarem sem estarem entranhados a um processo, de forma avulsa.
 
@@ -8,7 +8,7 @@ O Encaminhamento é a forma de Documentos tramitarem sem estarem entranhados a um
 - [Consultar](#consultar)
 - Consultar os Encaminhamentos
 
-## Encaminhar
+### Encaminhar
 Um Encaminhamento pode ser inserido sem referenciar um Encaminhamento Anterior, neste caso ele será o raiz.
 
 Um Encaminhamento pode ser inserido referenciando um Encaminhamento Anterior, conforme descrito abaixo:

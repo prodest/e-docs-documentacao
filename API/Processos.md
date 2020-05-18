@@ -1,4 +1,4 @@
-**Integração via API - Processos**
+**[Integração via API](Guideline.md) - Processos**
 
 Autuação e tramitação de Processos Administrativos seguindo a formalidade da legislação vigente.
 
@@ -16,7 +16,7 @@ O Processo possui um custodiante que pode ser:
 - [Encerrar](#encerrar)
 - [Consultar](#consultar)
 
-## Autuar
+### Autuar
 Um Processo Administrativo passa a existir no momento de sua autuação.
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Processos/Processos_Autuar).
@@ -25,31 +25,31 @@ No momento da autuação poderá ser informados quais documentos já serão entranhad
 
 Todo Processo é autuado na Unidade onde o Papel que fez a autuação está lotado.
 
-## Despachar
+### Despachar
 O Despacho é usado para movimentar o Processo Administrativo, fazendo com que o Processo mude de custodiante.
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Processos/Processos_Despachar).
 
 No momento do despacho poderá ser informados quais documentos serão entranhados ao processo.
 
-## Entranhar Documento
+### Entranhar Documento
 Através desse método é possível entranhar um Documento ao Processo sem que ele sofra uma movimentação.
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Processos/Processos_Entranhar).
 
-## Desentranhar Documentos
+### Desentranhar Documentos
 Através desse método é possível desentranhar um Documento que tenha sido entranhado anteriormente ao Processo. Este ato não movimenta o Processo.
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Processos/Processos_Desentranhar).
 
-## Encerrar
+### Encerrar
 Após concluidos os tramites do Processo e tendo ele atingido o seu objetivo, encerra-se o Processo.
 
 O Encerramento fará com que o processo seja movimentado para a Unidade que esteja vinculado ao atual custodiante.
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Processos/Processos_Encerrar).
 
-## Consultar
+### Consultar
 Os Processos poderão ser consultados.
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Processos/Processos_Get).
