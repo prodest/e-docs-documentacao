@@ -17,6 +17,8 @@ A captura do Documento é a forma de institucionalizá-lo e fazer com que ele poss
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Documentos/Documentos_Post).
 
+O Access Token obtido através da autenticação no Acesso Cidadão utilizando o scope 'api-sigades-documento' é requerido no cabeçalho das requisições aos endpoints de Captura usando o padrão Bearer Token. [Especificação de uso do Bearer Token](https://tools.ietf.org/html/rfc6750#page-5)
+
 Para melhor entendimento, o Documento pode ser categorizado quando à sua Natureza, Valor Legal e Gênoro
 
 Natureza:
@@ -37,3 +39,5 @@ Gênoro:
 Após um Documento ser capturado ele poderá ser consultado.
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Documentos/Documentos_Get).
+
+O Access Token obtido através da autenticação no Acesso Cidadão utilizando o scope 'api-sigades-consultar' ou 'api-sigades-documento' é requerido no cabeçalho das requisições aos endpoints de Consulta usando o padrão Bearer Token. [Especificação de uso do Bearer Token](https://tools.ietf.org/html/rfc6750#page-5)

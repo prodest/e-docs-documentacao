@@ -21,6 +21,8 @@ Um Processo Administrativo passa a existir no momento de sua autuação.
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Processos/Processos_Autuar).
 
+O Access Token obtido através da autenticação no Acesso Cidadão utilizando o scope 'api-sigades-processo' é requerido no cabeçalho das requisições ao endpoint de Autuação usando o padrão Bearer Token. [Especificação de uso do Bearer Token](https://tools.ietf.org/html/rfc6750#page-5)
+
 No momento da autuação poderá ser informados quais documentos já serão entranhados ao processo.
 
 Todo Processo é autuado na Unidade onde o Papel que fez a autuação está lotado.
@@ -30,6 +32,8 @@ O Despacho é usado para movimentar o Processo Administrativo, fazendo com que o 
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Processos/Processos_Despachar).
 
+O Access Token obtido através da autenticação no Acesso Cidadão utilizando o scope 'api-sigades-processo' é requerido no cabeçalho das requisições ao endpoint de Despacho usando o padrão Bearer Token. [Especificação de uso do Bearer Token](https://tools.ietf.org/html/rfc6750#page-5)
+
 No momento do despacho poderá ser informados quais documentos serão entranhados ao processo.
 
 ### Entranhar Documento
@@ -37,10 +41,14 @@ Através desse método é possível entranhar um Documento ao Processo sem que ele s
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Processos/Processos_Entranhar).
 
+O Access Token obtido através da autenticação no Acesso Cidadão utilizando o scope 'api-sigades-processo' é requerido no cabeçalho das requisições ao endpoint de Entranhamento de Documento usando o padrão Bearer Token. [Especificação de uso do Bearer Token](https://tools.ietf.org/html/rfc6750#page-5)
+
 ### Desentranhar Documentos
 Através desse método é possível desentranhar um Documento que tenha sido entranhado anteriormente ao Processo. Este ato não movimenta o Processo.
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Processos/Processos_Desentranhar).
+
+O Access Token obtido através da autenticação no Acesso Cidadão utilizando o scope 'api-sigades-processo' é requerido no cabeçalho das requisições ao endpoint de Desentranhamento de Documento usando o padrão Bearer Token. [Especificação de uso do Bearer Token](https://tools.ietf.org/html/rfc6750#page-5)
 
 ### Encerrar
 Após concluidos os tramites do Processo e tendo ele atingido o seu objetivo, encerra-se o Processo.
@@ -49,7 +57,11 @@ O Encerramento fará com que o processo seja movimentado para a Unidade que estej
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Processos/Processos_Encerrar).
 
+O Access Token obtido através da autenticação no Acesso Cidadão utilizando o scope 'api-sigades-processo' é requerido no cabeçalho das requisições ao endpoint de Encerramento usando o padrão Bearer Token. [Especificação de uso do Bearer Token](https://tools.ietf.org/html/rfc6750#page-5)
+
 ### Consultar
 Os Processos poderão ser consultados.
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Processos/Processos_Get).
+
+O Access Token obtido através da autenticação no Acesso Cidadão utilizando o scope 'api-sigades-consultar' ou 'api-sigades-processo' é requerido no cabeçalho das requisições aos endpoints de Consulta usando o padrão Bearer Token. [Especificação de uso do Bearer Token](https://tools.ietf.org/html/rfc6750#page-5)
