@@ -25,6 +25,10 @@ O Access Token obtido através da autenticação no Acesso Cidadão utilizando o sco
 
 No momento da autuação poderá ser informados quais documentos já serão entranhados ao processo.
 
+Para realizar esta ação é necesário que o usuário possua pelo menos um papel no Acesso Cidadão, e este papel deve possuir uma lotação.
+Usuários que são servidores do Governo do Estado do Espírito Santo já possuem seus papeis cadastrados através de integração com o sistema SIARHES.
+Caso seja necessário atribuir um papel a um terceiro, o administrador do sistema que está sendo integrado poderá fazer isso diretamente no Acesso Cidadão, neste caso também é necessário informar a lotação do papel do terceiro.
+
 Todo Processo é autuado na Unidade onde o Papel que fez a autuação está lotado.
 
 ### Despachar
