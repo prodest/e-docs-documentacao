@@ -8,6 +8,10 @@ O Processo possui um custodiante que pode ser:
 - Um Grupo, neste caso todos os membros do Grupo poderão realizar os atos processuais.
 - Um Papel (servidor púbico ocupando um cargo ou função), neste caso somente o detentor do Papel poderá realizar os atos processuais.
 
+Para realizar os Atos Autuar, Despachar, Entranhar Documentos, Desentranhar Documentos e Encerrar é necesário que o usuário possua pelo menos um papel no Acesso Cidadão, e este papel deve possuir uma lotação.
+Usuários que são servidores do Governo do Estado do Espírito Santo já possuem seus papeis atibuídos através da integração com o sistema SIARHES, bem como sua lotação.
+Caso seja necessário atribuir um papel a um terceiro, o administrador do sistema que está se integrando poderá fazer isso diretamente no Acesso Cidadão, neste caso também é necessário informar a lotação do papel do terceiro.
+
 **Ações disponíveis:**
 - [Autuar](#autuar)
 - [Despachar](#despachar)
@@ -24,10 +28,6 @@ A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/s
 O Access Token obtido através da autenticação no Acesso Cidadão utilizando o scope 'api-sigades-processo' é requerido no cabeçalho das requisições ao endpoint de Autuação usando o padrão Bearer Token. [Especificação de uso do Bearer Token](https://tools.ietf.org/html/rfc6750#page-5)
 
 No momento da autuação poderá ser informados quais documentos já serão entranhados ao processo.
-
-Para realizar esta ação é necesário que o usuário possua pelo menos um papel no Acesso Cidadão, e este papel deve possuir uma lotação.
-Usuários que são servidores do Governo do Estado do Espírito Santo já possuem seus papeis cadastrados através de integração com o sistema SIARHES.
-Caso seja necessário atribuir um papel a um terceiro, o administrador do sistema que está sendo integrado poderá fazer isso diretamente no Acesso Cidadão, neste caso também é necessário informar a lotação do papel do terceiro.
 
 Todo Processo é autuado na Unidade onde o Papel que fez a autuação está lotado.
 
