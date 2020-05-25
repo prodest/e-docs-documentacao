@@ -16,7 +16,7 @@ Um Encaminhamento pode ser inserido referenciando um Encaminhamento Anterior, co
 
 A documentação deste método pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html#/Encaminhamentos/Encaminhamentos_Post).
 
-O Access Token obtido através da autenticação no Acesso Cidadão utilizando o scope 'api-sigades-encaminhamento' é requerido no cabeçalho das requisições aos endpoints de Encaminhar usando o padrão Bearer Token. [Especificação de uso do Bearer Token](https://tools.ietf.org/html/rfc6750#page-5)
+O Access Token obtido através da **Autenticação de Usuário** no Acesso Cidadão utilizando o scope 'api-sigades-encaminhamento' é requerido no cabeçalho das requisições aos endpoints de Encaminhar usando o padrão Bearer Token. [Especificação de uso do Bearer Token](https://tools.ietf.org/html/rfc6750#page-5)
 
 ### Consultar
 Após um Encaminhamento ser inserido ele poderá ser consultado.
