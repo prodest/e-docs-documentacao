@@ -4,7 +4,7 @@ Os métodos disponíveis para utilização via api podem ser consultados [aqui](http
 
 O ambiente de Treinamento deve ser utilizado para os testes.
 [E-Docs Web - Treinamento](https://treinamento.e-docs.es.gov.br)
-[E-docs Api - Treinamento](https://api.treinamento.e-docs.es.gov.br/)
+[E-Docs Api - Treinamento](https://api.treinamento.e-docs.es.gov.br/)
 
 O Sistema E-Docs faz integração com os seguintes sistemas:
 
