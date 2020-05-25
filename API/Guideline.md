@@ -27,7 +27,7 @@ O Organograma possui sua API publicada em [aqui](https://api.organograma.es.gov.
   - Adicionar um App com o fluxo Hybrid, as propriedades destes App serão necessárias para configurar a autenticação dos usuários para que ele possa realizar as operações no E-Docs.
   - Adicionar um App com o fluxo ClientCredentials, as propriedades destes App serão necessárias para que o sistema faça consultas em outros sistemas, por exemplo o organograma.
   - Pode ser que seja necessário utilizar métodos que estão disponibilizados via [Api](https://sistemas.es.gov.br/prodest/acessocidadao.webapi/swagger) do Acesso Cidadão.
-- Caso seja necessário obter informações do Organograma será necessário acrescentar o scope ApiOrganograma ao App de fluxo ClientCredentials que foi criado no Acesso Cidadão.
+- Caso seja necessário obter informações do Organograma será necessário acrescentar o scope api-organograma ao App de fluxo ClientCredentials que foi criado no Acesso Cidadão.
 
 
 **Principais ações do E-Docs**
