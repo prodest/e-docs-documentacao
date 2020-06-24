@@ -26,3 +26,5 @@ As principais funcionalidades do E-Docs são:
 
 
   **[Integrações via API](API/Guideline.md)**
+
+[Glossário](Glossario.md)
