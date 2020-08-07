@@ -1,0 +1,145 @@
+
+//icon button
+@await (Html.CreateIconButton()
+			.Id($"action-edit-{item.Id}").Icon(Icones.BASE_EDITAR).Tooltip("Editar")
+			.Url($"/Admin/FundamentoLegal/Edit/{item.Id}")
+			.RenderAsync())
+
+//botao outlined
+@await (Html.CreateButton()
+			.Id("btn-classe-voltar").Label("Voltar").LeadingIcon(@Icones.BASE_VOLTAR).Outlined()
+			.RenderAsync())
+
+//botões card action button
+@await (Html.CreateButton()
+			.Label("Capturar outro Documento").ScdCardActionButton_Primary().Url("/Documento/Captura")
+			.RenderAsync())
+			
+@await (Html.CreateButton()
+			.Label("Voltar ao Início").ScdCardActionButton_Secondary().Url("/Internal")
+			.RenderAsync())
+			
+@await (Html.CreateButton()
+			.Id("btn-cancelar").Label("Cancelar").ScdCardActionButton_Default()
+			.RenderAsync())
+
+//botao wizard proximo
+@await (Html.CreateButton()
+			.Id("btn-proximo-destinatarios").Label("Próximo").LeadingIcon(@Icones.BASE_AVANCAR).Outlined().OuterCssClass("scd-wizard__card-opcao__botao-proximo")
+			.RenderAsync())
+
+//botao que abre confirmation - com action
+@await (Html.CreateButton()
+			.Id("action-descartar").Label("Excluir").LeadingIcon(Icones.BASE_EXCLUIR)
+			.OuterCssClass("confirmation-dialog-click")
+			.AddAttribute("data-dialog-id", $"{item.Id}")
+			.AddAttribute("data-dialog-nome", "Confirmar Exclusão")
+			.AddAttribute("data-dialog-label", "Deseja excluir este rascunho?")
+			.AddAttribute("data-dialog-action", $"/Documento/Elaboracao/{item.Id}")
+			.AddAttribute("data-dialog-action-button-label", "Excluir")
+			.RenderAsync())
+
+//botao que abre confirmation - com function JS									
+@await (Html.CreateButton()
+			.Id("action-cancelar").Label("Cancelar").LeadingIcon(Icones.CREDENCIAMENTO_CANCELAR).ScdCardActionButton_Primary()
+			.OuterCssClass("confirmation-dialog-click")
+			.AddAttribute("data-dialog-id", "0")
+			.AddAttribute("data-dialog-nome", "Confirmação de Cancelamento")
+			.AddAttribute("data-dialog-label", "Deseja realmente cancelar esta solicitação de credenciamento?")
+			.AddAttribute("data-dialog-function", "cancelarSolicitacao()")
+			.AddAttribute("data-dialog-action-button-label", "Enviar")
+			.RenderAsync())
+		
+//text field basico - busca
+@await (Html.CreateTextField()
+			.Id("input-search")
+			.Placeholder("Digite aqui para filtrar")
+			.RenderAsync())
+
+//text field formulario
+@await (Html.CreateTextField()
+			.OuterCssClass("scd-text-field--large-highlighted")
+			.IdAndName("Nome").MaxLength(200).Required().InnerCssClass("scd-tipo-alfa-com-caracter-especial")
+			.Value(Model.Nome)
+			.RenderAsync())
+		
+//text field abrindo modal
+@await (Html.CreateTextField()
+			.IdAndName("input_orgao").Label("Órgão").ReadOnly().LeadingIcon(@Icones.BASE_BUSCAR).InnerCssClass("scd-clickable")
+			.OuterCssClass("btn-active-dialog")
+			.AddAttribute("data-list", "list-orgao-dialog")
+			.AddAttribute("data-title", "Selecione um Órgão")
+			.AddAttribute("data-field-text", "#input_orgao")
+			.AddAttribute("data-field-hidden", "#IdOrgao")
+			.Value(Model.LabelOrgao)
+			.RenderAsync())
+		
+//text field campo de busca avançada
+@await (Html.CreateTextField()
+			.FieldId("AssinadoPorField").IdAndName("AssinadoPorLabel").Label("Assinado por").ReadOnly()
+			.LeadingIcon(@Icones.BASE_BUSCAR).AddTrailingClearButton().InnerCssClass("scd-clickable campo-filtro")
+			.Value(Model.SearchFilter.AssinadoPorLabel)
+			.RenderAsync())
+		
+//text field campo de busca data
+@await (Html.CreateTextField()
+			.IdAndName("dataCapturaIni").Label("Captura Início")
+			.LeadingIcon(@Icones.BASE_CALENDARIO, "btnDataIni").InnerCssClass("scd-tipo-data campo-filtro")
+			.Value(Model.SearchFilter.DataCapturaIniLabel)
+			.RenderAsync())
+
+//text area
+@await (Html.CreateTextArea()
+			.IdAndName("Descricao").Label("Descrição").Rows(6).MinLength(3).MaxLength(500).Required()
+			.Value(Model.Descricao)
+			.HelperText("A descrição será exibida na tela de Captura de Documento, quando o usuário clicar na opção de ajuda.")
+			.RenderAsync())
+
+//drop down
+<input id="SinalizacaoId" name="SinalizacaoId" type="hidden" value="@Model.SearchFilter.SinalizacaoId" />
+@await (Html.CreateDropDown()
+			.Id("ddSinalizacao").Label("Sinalização")
+			.Value(Model.SearchFilter.SinalizacaoId)
+			.InsertEmptyItem()
+			.Items(collection: Model.SearchFilter.SinalizacoesProcesso,
+				   label: x => x.Nome,
+				   value: x => x.Id.Value.ToString()
+			)
+			.RenderAsync())
+
+//drop-down de enum
+<input id="GeneroId" name="GeneroId" type="hidden" value="@Model.SearchFilter.GeneroId" />
+@await (Html.CreateDropDown()
+			 .Id("ddGenero").Label("Gênero")
+			 .InsertEmptyItem().ItemsFromEnum<DocumentoGenero>()
+			 .Value(Model.SearchFilter.GeneroId)
+			 .RenderAsync())
+
+//drop-down na unha
+@{
+	var items = new List<DropDown.Item>();
+	@foreach (var p in Model.Planos.OrEmptyIfNull())
+	{
+		var item = new DropDown.Item { Label = p.Codigo_Nome, Value = p.Id.ToString() };
+		items.Add(item);
+	}
+}
+
+@await (Html.CreateDropDown()
+			.IdAndName("IdPlanoModal").Label("Plano")
+			.Value(Model.IdPlano.HasValue ? Model.IdPlano.Value.ToString() : "")
+			.Items(items)
+			.RenderAsync())
+
+
+//check box
+@await (Html.CreateCheckBox()
+			.IdAndName("IsCapturado").Label("Capturados por Mim").Checked(Model.SearchFilter.IsCapturado)
+			.RenderAsync())
+		
+		
+//radio
+@await (Html.CreateRadio()
+			.Id("sit-ativo").Name("chkAtivo").Label("Ativo").Checked(Model.Ativo)
+			.RenderAsync())		
+		
