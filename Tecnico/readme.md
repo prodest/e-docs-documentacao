@@ -10,7 +10,7 @@
 
 2.1 - Redis e o HierarchicalCache
 
-![2.2 - Elastic Search](almoco.PNG)
+2.2 - Elastic Search
 
 2.3 - Minio
 
