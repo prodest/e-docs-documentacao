@@ -42,7 +42,7 @@ A solution do E-Docs no Visual Studio chama-se **ClassificacaoDocumental.sln** (
 
 
 
-### **Projetos Suporte **
+### **Projetos Suporte**
 
 **DocumentModels** - implementa o servidor de modelos de documentos do sistema. Recebe dados em formato json e retorna um documento em HTML, com formação e imagens auto-contidas, pronto para ser convertido em PDF.
 
