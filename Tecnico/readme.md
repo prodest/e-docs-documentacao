@@ -1,5 +1,4 @@
-Documentação Técnica
-
+**Documentação Técnica**
 
 1 - Arquitetura
 
@@ -12,24 +11,34 @@ Documentação Técnica
 
 2.2 - Elastic Search
 
+2.3 - Minio
+
 3 - Bibliotecas
 
 3.1 - Entity Framework
+
 3.2 - Hangfire
 
 4 - Soluções Técnicas E-Docs
 
 4.1 - Autenticação
+
 4.2 - Autorização
+
 4.3 - Auditoria
+
 4.4 - Data Protection
-4.2 - API (Autorização)
+
+4.5 - API (Autorização)
 
 5 - Ferramentas de Monitoramento e Apoio
 
 5.1 - APM
+
 5.2 - HealthCheck
+
 5.3 - Monitoramento Interno
+
 5.4 - CI/CD
 
 6 - Metodologias
