@@ -3,6 +3,7 @@
 1 - Arquitetura
 
 1.1 - Solution Visual Studio e Projetos
+
 1.2 - Arquitetura em Camadas
 
 2 - Servidores
@@ -31,15 +32,15 @@
 
 4.5 - API (Autorização)
 
-5 - Ferramentas de Monitoramento e Apoio
+5 - Monitoramento
 
-5.1 - APM
+​	5.1 - APM
 
-5.2 - HealthCheck
+​	5.2 - Monitoramento Interno
 
-5.3 - Monitoramento Interno
+6 - CI/CD
 
-5.4 - CI/CD
+6.1 - HealthCheck
 
 6 - Metodologias
 
