@@ -22,6 +22,8 @@ Atualmente, usamos a seguinte configuração, no **AppSettings.json** dos projet
 
 Com ela, todos os requests são salvos para monitoramento e análise, sendo possível, dentro do período de 7 dias, avaliar qualquer requisição ou transação feita dentro do E-Docs, em qualquer um de seus módulos.
 
+É possível reduzir o percentual de exemplos salvos para facilitar a navegação no Kibana do servidor de APM, mas por enquato não foi necessário realizar tal redução.
+
 Por padrão, o APM para .NET Core monitora todas as requisições realizadas ao MVC, desde o controller, criando a chamada TRANSACTION.
 
 Caso seja necessário destacar, dentro de uma TRANSACTION, algum trecho específico, é possível criar um SPAN a partir de uma TRANSACTION existente.
