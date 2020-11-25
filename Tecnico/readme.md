@@ -42,14 +42,19 @@
 
 6.1 - HealthCheck
 
-#### 7 - Metodologias
+#### 7 - Ferramentas
 
-7.1 - Exceptions
+7.1 - Visual Studio
+- [Schema Compare](Ferramentas/SchemaCompare.md)
 
-8 - Infraestrutura
+#### 8 - Metodologias
 
-8.1 - Outbound
+8.1 - Exceptions
 
-9 - Sistemas Correlatos
+#### 9 - Infraestrutura
 
-9.1 - Organograma
+9.1 - Outbound
+
+#### 10 - Sistemas Correlatos
+
+10.1 - Organograma
