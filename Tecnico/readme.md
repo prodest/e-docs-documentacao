@@ -52,9 +52,7 @@
 8.1 - Exceptions
 
 #### 10 - Sistemas Correlatos
-
 1. Organograma
-
 2. [Outbound](SistemasCorrelatos/Outbound.md)
-
 3. Acesso cidadão
+[4. API de Processamento de PDF](SistemasCorrelatos/ApiPdf.md)
