@@ -2,7 +2,7 @@
 
 O E-Docs trabalha com três tipos especializados de exceções: **MisuseException**, **AccessDeniedException** e **BusinessException**.
 
-![Exceptions](../../Recursos/Metodologias/Exceptions/exceptions.png)
+![Exceptions](../../Recursos/Metodologias/Exceptions/Exceptions.png)
 
 Cada uma destas exceções possui uma propriedade de nome Error, cujo valor é bem descritivo e especifica qual o tipo de erro capturado. Ex: NullOrEmptyArgument, EmptyList, PastaNotFound, etc.
 
