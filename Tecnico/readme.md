@@ -51,10 +51,10 @@
 
 8.1 - Exceptions
 
-#### 9 - Infraestrutura
-
-[9.1 - Outbound](Infraestrutura/Outbound.md)
-
 #### 10 - Sistemas Correlatos
 
-10.1 - Organograma
+1. Organograma
+
+2. [Outbound](SistemasCorrelatos/Outbound.md)
+
+3. Acesso cidadão
