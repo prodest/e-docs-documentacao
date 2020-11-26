@@ -32,7 +32,7 @@
     1. [Schema Compare](Ferramentas/SchemaCompare.md)
 
 #### 8 - Metodologias
-1. Exceptions
+1. [Exceptions](Metodologias/Exceptions.md)
 
 #### 10 - Sistemas Correlatos
 1. Organograma
