@@ -145,15 +145,15 @@ Atributos:
 - Fundamentos Legais - Lista de guids
 
 
-**Consultas**
+### **Consultas**
 
 `POST /v2/documentos/search`
 
-**Único Elemento**
+### **Único Elemento**
 
 `GET ​/v2​/documento​/{protocolo}`
 
-**Lista de Elementos**
+### **Lista de Elementos**
 
 `GET ​/v2​/documentos​/{id}​/assinantes`
 
@@ -165,7 +165,7 @@ Atributos:
 
 `GET ​/v2​/documentos​/{id}​/processos`
 
-**Edições**
+### **Edições**
 
 `PUT /v2/documentos/{idDocumento}/fundamentos-legais`
 
