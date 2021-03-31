@@ -23,6 +23,7 @@ As principais funcionalidades do E-Docs são:
   - Entranhar sem Custódia
   - Ajustar Custódia
   - Encerrar
+- [Credenciamento](Credenciamento/Credenciamento.md)
 
 
   **[Integrações via API](API/Guideline.md)**
