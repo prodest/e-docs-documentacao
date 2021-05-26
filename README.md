@@ -15,7 +15,7 @@ As principais funcionalidades do E-Docs são:
 - [Encaminhamento de documentos avulsos](Encaminhamentos/Encaminhamento.md)
 - [Limitação de Acesso](Documentos/AcessoLimitado.md) de acordo com a LAI e outras legislações específicas
 -   [Processo Administrativo](Processos/Processo.md) 
-  - Autuar
+  -- Autuar
   - Entranhar
   - Desentranhar
   - Despachar
