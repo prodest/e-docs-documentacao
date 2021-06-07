@@ -1,6 +1,6 @@
 **Integração via API - Guideline**
 
-Os métodos disponíveis para utilização via api podem ser consultados [aqui](https://api.e-docs.es.gov.br/swagger).
+Os métodos disponíveis para utilização via api podem ser consultados [aqui](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0).
 
 O ambiente de Treinamento deve ser utilizado para os testes.
 [E-Docs Web - Treinamento](https://treinamento.e-docs.es.gov.br)
@@ -10,16 +10,16 @@ O Sistema E-Docs faz integração com os seguintes sistemas:
 
 - [Acesso Cidadão](https://acessocidadao.es.gov.br)
 
-O Acesso Cidadão é utilizado para tratar as autenticações e autorizações dos usuários.
+	O Acesso Cidadão é utilizado para tratar as autenticações e autorizações dos usuários.
 
-O Acesso Cidadão possui sua API publicada em [aqui](https://sistemas.es.gov.br/prodest/acessocidadao.webapi/swagger).
+	O Acesso Cidadão possui sua API publicada em [aqui](https://sistemas.es.gov.br/prodest/acessocidadao.webapi/swagger).
 
 - [Organograma](https://organograma.es.gov.br)
 
-O Organograma é utilizado para consultar os Órgãos e Setores nele cadastrados.
+	O Organograma é utilizado para consultar os Órgãos e Setores nele cadastrados.
 Atualmente o Organograma possui uma integração com o sistema de Recursos Humanos do Governo do Estado do Espírito Santo, onde toda alteração referente a órgão e setor realizada lá é refletida no Orgranograma.
 
-O Organograma possui sua API publicada em [aqui](https://api.organograma.es.gov.br).
+	O Organograma possui sua API publicada em [aqui](https://api.organograma.es.gov.br).
 
 
 
@@ -38,12 +38,35 @@ Antes de utilizar a API do E-Docs ou do Organograma, você deve [solicitar acess
 
 **Principais ações do E-Docs**
 - [Documentos](Documentos.md)
+  - Enviar documento para fase de assinatura
   - Capturar
+  - Assinar
+  - Validar arquivo previamente capturado no E-Docs
+  - Pesquisas
 - [Encaminhamentos](Encaminhamentos.md)
   - Adicionar
+  - Reencaminhar
+  - Responder
+  - Complementar
+  - Pesquisas
 - [Processos](Processos.md)
   - Autuar
   - Despachar
+  - Avocar
   - Entranhar Documentos
   - Desentranhar Documentos
+  - Entranhar Encaminhamentos
+  - Editar
   - Encerrar
+  - Reabrir
+  - Pesquisas
+- [Eventos](Eventos.md)
+  - Pesquisas
+- [Agente](Agente.md)
+  - Pesquisas
+- [Usuario](Usuario.md)
+  - Pesquisas
+- [Classificacao Documental](ClassificacaoDocumental.md)
+  - Pesquisas
+- [Fundamentos Legais](FundamentosLegais.md)
+  - Pesquisas
