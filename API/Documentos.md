@@ -30,7 +30,7 @@ O procedimento padrão para registrar documentos no E-Docs consistem em:
 A autenticação será através do padrão **Bearer Token**, utilizando o Access Token obtido através da **Autenticação de Usuário** no Acesso Cidadão. 
 
 - Para as requisições aos endpoints de Fase de Assinatura e Captura será requerido o scope 'api-sigades-documento' no cabeçalho;
-- Para as requisições de consulta, será requerido o scope 'api-sigades-documento' (ou a anterior) no cabeçalho. 
+- Para as requisições de consulta, será requerido o scope 'api-sigades-consultar' (ou a anterior) no cabeçalho. 
 
 [Especificação de uso do Bearer Token](https://tools.ietf.org/html/rfc6750#page-5).
 
@@ -197,4 +197,4 @@ Para buscar o planos ativos e classes ativas, utilize [esses endpoints](https://
 
 Para buscar os fundamentos legais cabíveis a você, utilize [esse endpoint](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-FundamentosLegais-get_v2_fundamentos_legais__idPatriarca_).
 
-Para buscar informações a um usuário logado, tal qual assinaturas, papeis, caixas, utilize [esses endpoints](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-Usuario).
+Para buscar informações do usuário logado, tal qual assinaturas, papeis, caixas, utilize [esses endpoints](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-Usuario).
