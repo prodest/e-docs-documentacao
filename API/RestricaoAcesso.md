@@ -2,6 +2,8 @@
 
 Para visualizar o modelo, acesse [aqui](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#model-RestricaoAcessoApiEntry).
 
+As limitações de acesso ao conteúdo a um Documento, de acordo com legislação.
+
 Para maiores informações, clique [aqui](../Documentos/AcessoLimitado.md).
 
 Há os seguintes níveis de acesso para documentos disponíveis pela API:

@@ -60,3 +60,4 @@ Antes de utilizar a API do E-Docs ou do Organograma, você deve [solicitar acess
   - Encerrar
   - Reabrir
   - Pesquisas
+- [Informações Básicas para Preenchimento de Cadastros](Consultas.md)

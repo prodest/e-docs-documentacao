@@ -2,6 +2,13 @@
 
 A documentação para os métodos de Documentos pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-Documentos).
 
+Um documento contém informações acerca de um documento em si, além de englobar o arquivo relativo a esse documento.
+
+Ele pode ser assinado das formas abaixo **(Lei Nº 14.063/20 - Art. 4º)**:
+- **Assinatura Eletrônica** (ou Assinatura Eletrônica Avançada) - a assinatura realizada diretamente pelo E-Docs;
+- **Assinatura Digital** (ou Assinatura Eletrônica Qualificada) - uma assinatura ICP-Brasil realizada diretamente no arquivo texto, previamente à sua captura no E-Docs.
+- O arquivo pode ainda não conter ter nenhuma assinatura
+
 O procedimento padrão para registrar documentos no E-Docs consistem em:
 - **[1 - Autenticação no E-Docs:](#autenticacao-no-e-docs)**
   - Autenticar para uso do E-Docs por método Bearer;
@@ -191,12 +198,16 @@ Destacamos entre os demais end points:
 
 Para os demais endpoints, consultar a documentação completa [aqui](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-Documentos).
 
-### Informações necessárias para preenchimento
+### Informações complementares para preenchimento
 
-Para buscar o patriarcas, órgãos, setores, grupos de trabalho e comissões, utilize [esses endpoints](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-Agente).
+Abaixo as informações básicas necessárias para o preenchimento de cadastros de Documentos:
 
-Para buscar o planos ativos e classes ativas, utilize [esses endpoints](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-ClassificacaoDocumental).
+Para buscar patriarcas, órgãos, setores, grupos de trabalho e comissões, utilize [esses endpoints](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-Agente).
 
-Para buscar os fundamentos legais cabíveis a você, utilize [esse endpoint](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-FundamentosLegais-get_v2_fundamentos_legais__idPatriarca_).
+Para buscar planos ativos e classes ativas, utilize [esses endpoints](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-ClassificacaoDocumental).
 
-Para buscar informações do usuário logado, tal qual assinaturas, papeis, caixas, utilize [esses endpoints](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-Usuario).
+Para buscar fundamentos legais, utilize [esse endpoint](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-FundamentosLegais-get_v2_fundamentos_legais__idPatriarca_).
+
+Para buscar informações do usuário logado, utilize [esses endpoints](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-Usuario).
+
+Clique [aqui](Consultas.md) para maiores informações.

@@ -81,10 +81,14 @@ Após um Encamihamento ser registrado ele poderá ser consultado, respondido, etc.
 
 Para os endpoints de consulta, consultar a documentação completa [aqui](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-Encaminhamentos).
 
-### Informações necessárias para preenchimento
+### Informações complementares para preenchimento
 
-Para buscar o patriarcas, órgãos, setores, grupos de trabalho e comissões, utilize [esses endpoints](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-Agente).
+Abaixo as informações básicas necessárias para o preenchimento de cadastros de Documentos:
 
-Para buscar os fundamentos legais cabíveis a você, utilize [esse endpoint](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-FundamentosLegais-get_v2_fundamentos_legais__idPatriarca_).
+Para buscar patriarcas, órgãos, setores, grupos de trabalho e comissões, utilize [esses endpoints](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-Agente).
 
-Para buscar informações do usuário logado, tal qual assinaturas, papeis, caixas, utilize [esses endpoints](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-Usuario).
+Para buscar fundamentos legais, utilize [esse endpoint](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-FundamentosLegais-get_v2_fundamentos_legais__idPatriarca_).
+
+Para buscar informações do usuário logado, utilize [esses endpoints](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-Usuario).
+
+Clique [aqui](Consultas.md) para maiores informações.
