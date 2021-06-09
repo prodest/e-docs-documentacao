@@ -61,9 +61,9 @@ class UploadDataJsonModel
 }
 ```
 
-Agora o método para realizar a requisição POST (essa etapa deve ser realizada imediatamente após a execução da etapa anterior, pois a janela de envio se fecha em poucos segundos):
+Agora o método para realizar a requisição POST (essa etapa deve ser realizada imediatamente após a execução da etapa anterior, pois a janela de envio se fecha em poucos segundos)
 
-Observação: Este é um exemplo simplificado, considere as [recomendações](https://docs.microsoft.com/pt-br/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests) da MicroSoft para utilização de HttpClient. 
+Observação: Este é um exemplo simplificado, considere as [recomendações](https://docs.microsoft.com/pt-br/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests) da Microsoft para utilização de HttpClient. 
 ```c#
 public async Task<bool> UploadFileToUrl(string url, UploadDataJsonModel data) {
     //cria o cliente do request
