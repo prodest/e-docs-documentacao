@@ -196,7 +196,7 @@ Após um Documento ser capturado ele poderá ser consultado, validado, entre out
 
 Destacamos entre os demais end points:
 - Pode usar: se o usuário tem permissão para usar esse documento em processos, encaminhamentos, etc. [Clique aqui](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-get_v2_documentos__idDocumento__pode_usar).
-- Validação de Assinatura Digital: Para validar se esse arquivo é um arquivo capturado no E-Docs. Ele não valida a veracidade do conteúdo, apenas o armazenamento no E-Docs. [Clique aqui](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_assinatura_digital_valida).
+- Validação de Assinatura Digital: Verifica se um arquivo contem assinatura digital e que essa atende a todos os parâmetros validados pelo E-Docs. Ele não valida a veracidade do conteúdo, apenas o armazenamento no E-Docs. [Clique aqui](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_assinatura_digital_valida).
 
 Para os demais endpoints, consultar a documentação completa [aqui](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-Documentos).
 
