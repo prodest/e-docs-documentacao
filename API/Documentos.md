@@ -111,7 +111,9 @@ Há diferentes tipos de etapas, de acordo com o tipo de documento enviado:
 
 Arquivo nato-digital é um arquivo originado a partir de um documento digital, tal como suítes de escritório, e exportado para PDF.
 
-Nesse caso, haverá multiplos assinantes, ou há um assinante, mas este não é o capturador, portanto as assinaturas serão realizadas em um momento posterior, através de endpoints específicos.
+Nesse caso, haverá multiplos assinantes, ou há um assinante, mas este não é o capturador, portanto as assinaturas serão realizadas em um momento posterior, através de endpoints específicos. 
+
+Em caso de o documento em fase de assinatura ter sido criado por um cidadão, todos os assinantes devem ser cidadãos.
 
 Portanto, o primeiro endpoint é o de envio do nome do arquivo criado na nuvem constante no JSON retornado na etapa anterior, tal qual das informações do Documento, conforme descrito [aqui se for um servidor](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_nato_digital_auto_assinado_servidor) ou [aqui se for um cidadão](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_nato_digital_auto_assinado_cidadao).
 
