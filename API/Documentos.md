@@ -1,52 +1,52 @@
-**[IntegraÁ„o via API](Guideline.md) - Documentos**
+**[Integra√ß√£o via API](Guideline.md) - Documentos**
 
-A documentaÁ„o para os mÈtodos de Documentos pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-Documentos).
+A documenta√ß√£o para os m√©todos de Documentos pode ser vista [aqui](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-Documentos).
 
-Um documento contÈm informaÁıes acerca de um documento em si, alÈm de englobar o arquivo relativo a esse documento.
+Um documento cont√©m informa√ß√µes acerca de um documento em si, al√©m de englobar o arquivo relativo a esse documento.
 
-Ele pode ser assinado das formas abaixo **(Lei N∫ 14.063/20 - Art. 4∫)**:
-- **Assinatura EletrÙnica** (ou Assinatura EletrÙnica AvanÁada) - a assinatura realizada diretamente pelo E-Docs;
-- **Assinatura Digital** (ou Assinatura EletrÙnica Qualificada) - uma assinatura ICP-Brasil realizada diretamente no arquivo texto, previamente ‡ sua captura no E-Docs.
-- O arquivo pode ainda n„o conter ter nenhuma assinatura
+Ele pode ser assinado das formas abaixo **(Lei N¬∫ 14.063/20 - Art. 4¬∫)**:
+- **Assinatura Eletr√¥nica** (ou Assinatura Eletr√¥nica Avan√ßada) - a assinatura realizada diretamente pelo E-Docs;
+- **Assinatura Digital** (ou Assinatura Eletr√¥nica Qualificada) - uma assinatura ICP-Brasil realizada diretamente no arquivo texto, previamente √† sua captura no E-Docs.
+- O arquivo pode ainda n√£o conter ter nenhuma assinatura
 
-O procedimento padr„o para registrar documentos no E-Docs consistem em:
-- **[1 - AutenticaÁ„o no E-Docs:](#autenticacao-no-e-docs)**
-  - Autenticar para uso do E-Docs por mÈtodo Bearer;
+O procedimento padr√£o para registrar documentos no E-Docs consistem em:
+- **[1 - Autentica√ß√£o no E-Docs:](#autenticacao-no-e-docs)**
+  - Autenticar para uso do E-Docs por m√©todo Bearer;
 - **[2 - Envio de Arquivo para E-Docs:](#envio-de-arquivo-para-e-docs)**
-  - a - Enviar para o E-docs o tamanho do arquivo a ser enviado, recebendo o endereÁo para onde deve ser enviado o arquivo fÌsico;
-  - b - Enviar o arquivo para o caminho acima (esse envio n„o ser· realizado atravÈs de end-point E-Docs) recebendo um objeto JSON com informaÁıes para as etapas posteriores;
+  - a - Enviar para o E-docs o tamanho do arquivo a ser enviado, recebendo o endere√ßo para onde deve ser enviado o arquivo f√≠sico;
+  - b - Enviar o arquivo para o caminho acima (esse envio n√£o ser√° realizado atrav√©s de end-point E-Docs) recebendo um objeto JSON com informa√ß√µes para as etapas posteriores;
 - **[3 - Registro do documento e captura](#registro-do-documento-e-captura)**
-  - **[Se for arquivo nato-digital e com assinatura digital E-Docs:](#se-for-arquivo-nato-digital-e-com-assinatura-digital-e-docs)**
-    - a - O documento dever· passar pela Fase de Assinatura, onde o Capturador (o cidad„o ou servidor respons·vel pelo registro) informar· o nome do arquivo criado na nuvem constante no JSON recebido na etapa anterior e todas as informaÁıes de metadados e quais ser„o os assinantes para o mesmo;
+  - **[Se for arquivo nato-digital e com Assinatura Eletr√¥nica E-Docs:](#se-for-arquivo-nato-digital-e-com-assinatura-digital-e-docs)**
+    - a - O documento dever√° passar pela Fase de Assinatura, onde o Capturador (o cidad√£o ou servidor respons√°vel pelo registro) informar√° o nome do arquivo criado na nuvem constante no JSON recebido na etapa anterior e todas as informa√ß√µes de metadados e quais ser√£o os assinantes para o mesmo;
     - b - Todos os assinantes devem assinar ou recusar assinatura;
-    - c - ApÛs o ˙ltimo assinante se manifestar, o documento ser· enviado para captura, sendo retornado um identificador do evento dessa captura;
-  - **[Se for arquivo nato digital e com apenas a assinatura digital E-Docs do Capturador:](#se-for-arquivo-nato-digital-e-com-apenas-a-assinatura-digital-e-Docs-do-capturador)**
-    - a - O Capturador (o cidad„o ou servidor respons·vel pelo registro) informar· o nome do arquivo criado na nuvem constante no JSON recebido na etapa anterior e todas as informaÁıes de metadados;
-    - b - O documento ser· assinado pelo capturador e posteriormente o documento ser· enviado para captura, sendo retornado um identificador do evento dessa captura;
+    - c - Ap√≥s o √∫ltimo assinante se manifestar, o documento ser√° enviado para captura, sendo retornado um identificador do evento dessa captura;
+  - **[Se for arquivo nato digital e com apenas a Assinatura Eletr√¥nica E-Docs do Capturador:](#se-for-arquivo-nato-digital-e-com-apenas-a-assinatura-digital-e-Docs-do-capturador)**
+    - a - O Capturador (o cidad√£o ou servidor respons√°vel pelo registro) informar√° o nome do arquivo criado na nuvem constante no JSON recebido na etapa anterior e todas as informa√ß√µes de metadados;
+    - b - O documento ser√° assinado pelo capturador e posteriormente o documento ser√° enviado para captura, sendo retornado um identificador do evento dessa captura;
   - **[Para todos os outros casos:](#para-todos-os-outros-casos)**
-    - a - O Capturador (o cidad„o ou servidor respons·vel pelo registro) informar· o nome do arquivo criado na nuvem constante no JSON recebido na etapa anterior e todas as informaÁıes de metadados;
-    - b - O documento ser· enviado para captura, sendo retornado um identificador do evento dessa captura;
+    - a - O Capturador (o cidad√£o ou servidor respons√°vel pelo registro) informar√° o nome do arquivo criado na nuvem constante no JSON recebido na etapa anterior e todas as informa√ß√µes de metadados;
+    - b - O documento ser√° enviado para captura, sendo retornado um identificador do evento dessa captura;
 - **[4 - Captura do documento:](#captura-do-documento)**
-  - a - O E-Docs ir· colocar o documento na fila de captura, em um objeto de evento, com o identificador recebido na etapa anterior;
-  - b - Uma vez o evento seja executado, o objeto de evento ser· complementado com a informaÁ„o do identificador do documento capturado;
+  - a - O E-Docs ir√° colocar o documento na fila de captura, em um objeto de evento, com o identificador recebido na etapa anterior;
+  - b - Uma vez o evento seja executado, o objeto de evento ser√° complementado com a informa√ß√£o do identificador do documento capturado;
 - **[5 - Documento capturado:](#documento-capturado)**
-  - O documento j· pode ser utilizado em processos, encaminhamentos, consultas, etc.
+  - O documento j√° pode ser utilizado em processos, encaminhamentos, consultas, etc.
 
-### AutenticaÁ„o no E-Docs
+### Autentica√ß√£o no E-Docs
 
-A autenticaÁ„o ser· atravÈs do padr„o **Bearer Token**, utilizando o Access Token obtido atravÈs da **AutenticaÁ„o de Usu·rio** no Acesso Cidad„o. 
+A autentica√ß√£o ser√° atrav√©s do padr√£o **Bearer Token**, utilizando o Access Token obtido atrav√©s da **Autentica√ß√£o de Usu√°rio** no Acesso Cidad√£o. 
 
-- Para as requisiÁıes aos endpoints de Fase de Assinatura e Captura ser· requerido o scope 'api-sigades-documento' no cabeÁalho;
-- Para as requisiÁıes de consulta, ser· requerido o scope 'api-sigades-consultar' (ou a anterior) no cabeÁalho. 
+- Para as requisi√ß√µes aos endpoints de Fase de Assinatura e Captura ser√° requerido o scope 'api-sigades-documento' no cabe√ßalho;
+- Para as requisi√ß√µes de consulta, ser√° requerido o scope 'api-sigades-consultar' (ou a anterior) no cabe√ßalho. 
 
-[EspecificaÁ„o de uso do Bearer Token](https://tools.ietf.org/html/rfc6750#page-5).
+[Especifica√ß√£o de uso do Bearer Token](https://tools.ietf.org/html/rfc6750#page-5).
 
 ### Envio de Arquivo para E-Docs
-A API do E-Docs aceita apenas arquivos texto, de extens„o PDF.
+A API do E-Docs aceita apenas arquivos texto, de extens√£o PDF.
 
-O primeiro endpoint a ser utilizado È o [pegar-url-envio](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-get_v2_documentos_upload_arquivo_pegar_url_envio__tamanhoArquivo_) onde deve ser enviado exato do tamanho do arquivo a ser enviado, recebendo ao final uma url que ser· utilizada para o envio do arquivo fÌsico.
+O primeiro endpoint a ser utilizado √© o [pegar-url-envio](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-get_v2_documentos_upload_arquivo_pegar_url_envio__tamanhoArquivo_) onde deve ser enviado exato do tamanho do arquivo a ser enviado, recebendo ao final uma url que ser√° utilizada para o envio do arquivo f√≠sico.
 
-De posse desse endereÁo, deve-se realizar uma requisiÁ„o POST direto para a nuvem do E-Docs, conforme exemplos de cÛdigo abaixo.
+De posse desse endere√ßo, deve-se realizar uma requisi√ß√£o POST direto para a nuvem do E-Docs, conforme exemplos de c√≥digo abaixo.
 
 Primeiro criar um modelo que vai conter o JSON recebido no endpoint anterior e o caminho completo do arquivo no servidor local:
 ```c#
@@ -68,7 +68,9 @@ class UploadDataJsonModel
 }
 ```
 
-Agora o mÈtodo para realizar a requisiÁ„o POST (essa etapa deve ser realizada imediatamente apÛs a execuÁ„o da etapa anterior, pois a janela de envio se fecha em poucos segundos):
+Agora o m√©todo para realizar a requisi√ß√£o POST (essa etapa deve ser realizada imediatamente ap√≥s a execu√ß√£o da etapa anterior, pois a janela de envio se fecha em poucos segundos)
+
+Observa√ß√£o: Este √© um exemplo simplificado, considere as [recomenda√ß√µes](https://docs.microsoft.com/pt-br/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests) da Microsoft para utiliza√ß√£o de HttpClient. 
 ```c#
 public async Task<bool> UploadFileToUrl(string url, UploadDataJsonModel data) {
     //cria o cliente do request
@@ -82,11 +84,11 @@ public async Task<bool> UploadFileToUrl(string url, UploadDataJsonModel data) {
     streamContent.Headers.ContentType = MediaTypeHeaderValue.Parse("application/octet-stream");
     streamContent.Headers.ContentDisposition = new ContentDispositionHeaderValue("form-data")
     {
-        Name = "file", //nome do par‚metro do arquivo, n„o alterar
-        FileName = data.File.Split('\\')[^1] //na pr·tica esse nome aqui n„o ser· utilizado
+        Name = "file", //nome do par√¢metro do arquivo, n√£o alterar
+        FileName = data.File.Split('\\')[^1] //na pr√°tica esse nome aqui n√£o ser√° utilizado
     };
 
-    //adiviona os par‚metros retornados pelo JSON no content
+    //adiviona os par√¢metros retornados pelo JSON no content
     using var content = new MultipartFormDataContent
     {
         streamContent
@@ -96,7 +98,7 @@ public async Task<bool> UploadFileToUrl(string url, UploadDataJsonModel data) {
         content.Add(new StringContent(paramstro.Value), parametro.Key);
     });
 
-    //faz a requisiÁ„o
+    //faz a requisi√ß√£o
     using var response = await client.PostAsync(url, content);
 
     //se tudo der certo vai retornar true
@@ -104,71 +106,71 @@ public async Task<bool> UploadFileToUrl(string url, UploadDataJsonModel data) {
 }
 ```
 
-Esse arquivo ir· para uma ·rea tempor·ria aguardando os prÛximos passos de registro dos metadados do Documento. Caso n„o seja realizado esse prÛximo passo, esse arquivo ser· excluÌdo do servidor, por falta de vÌnculo com um Documento registrado no E-Docs.
+Esse arquivo ir√° para uma √°rea tempor√°ria aguardando os pr√≥ximos passos de registro dos metadados do Documento. Caso n√£o seja realizado esse pr√≥ximo passo, esse arquivo ser√° exclu√≠do do servidor, por falta de v√≠nculo com um Documento registrado no E-Docs.
 
 ### Registro do documento e captura
 
-Nesse passo vocÍ dever· dar continuidade aos passos anteriores de upload do arquivo a ser registrado.
+Nesse passo voc√™ dever√° dar continuidade aos passos anteriores de upload do arquivo a ser registrado.
 
-Ao fim desse passo vocÍ ter· posse do identificador do evento de captura que foi enfileirado.
+Ao fim desse passo voc√™ ter√° posse do identificador do evento de captura que foi enfileirado.
 
-H· diferentes tipos de etapas, de acordo com o tipo de documento enviado:
+H√° diferentes tipos de etapas, de acordo com o tipo de documento enviado:
 
 ### Se for arquivo nato-digital e com assinatura digital E-Docs
 
-Arquivo nato-digital È um arquivo originado a partir de um documento digital, tal como suÌtes de escritÛrio, e exportado para PDF.
+Arquivo nato-digital √© um arquivo originado a partir de um documento digital, tal como su√≠tes de escrit√≥rio, e exportado para PDF.
 
-Nesse caso, haver· multiplos assinantes, ou h· um assinante, mas este n„o È o capturador, portanto as assinaturas ser„o realizadas em um momento posterior, atravÈs de endpoints especÌficos. 
+Nesse caso, haver√° multiplos assinantes, ou h√° um assinante, mas este n√£o √© o capturador, portanto as assinaturas ser√£o realizadas em um momento posterior, atrav√©s de endpoints espec√≠ficos. 
 
-Em caso de o documento em fase de assinatura ter sido criado por um cidad„o, todos os assinantes devem ser cidad„os.
+Em caso de o documento em fase de assinatura ter sido criado por um cidad√£o, todos os assinantes devem ser cidad√£os.
 
-Portanto, o primeiro endpoint È o de envio do nome do arquivo criado na nuvem constante no JSON retornado na etapa anterior, tal qual das informaÁıes do Documento, conforme descrito [aqui se for um servidor](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_nato_digital_auto_assinado_servidor) ou [aqui se for um cidad„o](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_nato_digital_auto_assinado_cidadao).
+Portanto, o primeiro endpoint √© o de envio do nome do arquivo criado na nuvem constante no JSON retornado na etapa anterior, tal qual das informa√ß√µes do Documento, conforme descrito [aqui se for um servidor](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_nato_digital_auto_assinado_servidor) ou [aqui se for um cidad√£o](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_nato_digital_auto_assinado_cidadao).
 
-Para maiores informaÁıes sobre restriÁ„o de acesso [clique aqui](RestricaoAcesso.md)
+Para maiores informa√ß√µes sobre restri√ß√£o de acesso [clique aqui](RestricaoAcesso.md)
 
-Registrado o documento em fase de assinatura, o retorno ser· um identificador de documento em fase de assinatura.
+Registrado o documento em fase de assinatura, o retorno ser√° um identificador de documento em fase de assinatura.
 
-Nesse momento, em posse desse identificador, os usu·rios assinantes devem - autenticados com seus respectivos Access Tokens - realizar a assinatura conforme descrito [aqui](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-get_v2_documentos_fase_assinatura_assinar__IdDocumentoFaseAssinatura_).
+Nesse momento, em posse desse identificador, os usu√°rios assinantes devem - autenticados com seus respectivos Access Tokens - realizar a assinatura conforme descrito [aqui](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-get_v2_documentos_fase_assinatura_assinar__IdDocumentoFaseAssinatura_).
 
-Com a ˙ltima manifestaÁ„o de assinante realizada o documento È capturado e o retorno do endpoint de assinatura retorna capturado como true e idCapturaEvento retorna o identificador do evento de captura que foi enfileirado.
+Com a √∫ltima manifesta√ß√£o de assinante realizada o documento √© capturado e o retorno do endpoint de assinatura retorna capturado como true e idCapturaEvento retorna o identificador do evento de captura que foi enfileirado.
 
 ### Se for arquivo nato digital e com apenas a assinatura digital E-Docs do Capturador
 
-Arquivo nato-digital È um arquivo originado a partir de um documento digital, tal como suÌtes de escritÛrio, e exportado para PDF.
+Arquivo nato-digital √© um arquivo originado a partir de um documento digital, tal como su√≠tes de escrit√≥rio, e exportado para PDF.
 
-Nesse caso, haver· apenas um assinante, e este È o prÛprio capturador, portanto a assinatura ser„o realizada automaticamente.
+Nesse caso, haver√° apenas um assinante, e este √© o pr√≥prio capturador, portanto a assinatura ser√£o realizada automaticamente.
 
-Assim, o endpoint recebr· o nome do arquivo criado na nuvem constante no JSON retornado na etapa anterior, tal qual as informaÁıes do Documento, conforme descrito [aqui se for um servidor](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_fase_assinatura_enviar_servidor) ou [aqui se for um cidad„o](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_fase_assinatura_enviar_cidadao).
+Assim, o endpoint recebr√° o nome do arquivo criado na nuvem constante no JSON retornado na etapa anterior, tal qual as informa√ß√µes do Documento, conforme descrito [aqui se for um servidor](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_fase_assinatura_enviar_servidor) ou [aqui se for um cidad√£o](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_fase_assinatura_enviar_cidadao).
 
-Para maiores informaÁıes sobre restriÁ„o de acesso [clique aqui](RestricaoAcesso.md)
+Para maiores informa√ß√µes sobre restri√ß√£o de acesso [clique aqui](RestricaoAcesso.md)
 
-Registrado o documento, o E-Docs automaticamente ir· acrescentar o Capturador como assinante, j· realizando tambÈm essa etapa.
+Registrado o documento, o E-Docs automaticamente ir√° acrescentar o Capturador como assinante, j√° realizando tamb√©m essa etapa.
 
-Por fim È realizada a captura e retorna-se o identificador do evento de captura que foi enfileirado.
+Por fim √© realizada a captura e retorna-se o identificador do evento de captura que foi enfileirado.
 
 ### Para todos os outros casos
 
 Aqui se engloba os tipos de arquivo:
-- Arquivo nato-digital, que È um arquivo originado a partir de um documento digital, tal como suÌtes de escritÛrio, e exportado para PDF.
-  - Se o arquivo nato-digital È apenas uma cÛpia, sem nenhum assinatura;
-  - Se o arquivo nato-digital foi previamente assinado por uma assinatura digital padr„o ICP-Brasil.
-- Arquivo digitalizado, que È um arquivo originado a partir de um documento fÌsico em papel, digitalizado por foto ou dispositivo digitalizador de documentos tal qual scanner, no formato PDF.
+- Arquivo nato-digital, que √© um arquivo originado a partir de um documento digital, tal como su√≠tes de escrit√≥rio, e exportado para PDF.
+  - Se o arquivo nato-digital √© apenas uma c√≥pia, sem nenhum assinatura;
+  - Se o arquivo nato-digital foi previamente assinado por uma assinatura digital padr√£o ICP-Brasil.
+- Arquivo digitalizado, que √© um arquivo originado a partir de um documento f√≠sico em papel, digitalizado por foto ou dispositivo digitalizador de documentos tal qual scanner, no formato PDF.
 
-Assim, ser· enviado o nome do arquivo criado na nuvem constante no JSON retornado na etapa anterior, tal qual as informaÁıes do Documento, para o endpoint mais adequado:
+Assim, ser√° enviado o nome do arquivo criado na nuvem constante no JSON retornado na etapa anterior, tal qual as informa√ß√µes do Documento, para o endpoint mais adequado:
 
-- Nato-digital ICP-Brasil, [aqui se for um servidor](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_nato_digital_icp_brasil_servidor) ou [aqui se for um cidad„o](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_nato_digital_icp_brasil_cidadao)
-- Nato-digital cÛpia, [aqui se for um servidor](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_nato_digital_copia_servidor) ou [aqui se for um cidad„o](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_nato_digital_copia_cidadao)
-- Digitalizado, [aqui se for um servidor](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_digitalizado_servidor) ou [aqui se for um cidad„o](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_digitalizado_cidadao)
+- Nato-digital ICP-Brasil, [aqui se for um servidor](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_nato_digital_icp_brasil_servidor) ou [aqui se for um cidad√£o](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_nato_digital_icp_brasil_cidadao)
+- Nato-digital c√≥pia, [aqui se for um servidor](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_nato_digital_copia_servidor) ou [aqui se for um cidad√£o](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_nato_digital_copia_cidadao)
+- Digitalizado, [aqui se for um servidor](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_digitalizado_servidor) ou [aqui se for um cidad√£o](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_digitalizado_cidadao)
 
-Para maiores informaÁıes sobre restriÁ„o de acesso [clique aqui](RestricaoAcesso.md).
+Para maiores informa√ß√µes sobre restri√ß√£o de acesso [clique aqui](RestricaoAcesso.md).
 
-Por fim È realizada a captura e retorna-se o identificador do evento de captura que foi enfileirado.
+Por fim √© realizada a captura e retorna-se o identificador do evento de captura que foi enfileirado.
 
 ### Captura do Documento
 
-A captura do Documento È a forma de institucionaliz·-lo e fazer com que ele possa ser utilizado dentro do E-Docs.
+A captura do Documento √© a forma de institucionaliz√°-lo e fazer com que ele possa ser utilizado dentro do E-Docs.
 
-Na etapa anterior, o Documento foi categorizado quando ‡ sua Natureza, Valor Legal e GÍnero
+Na etapa anterior, o Documento foi categorizado quando √† sua Natureza, Valor Legal e G√™nero
 
 Natureza:
 - Nato-digital;
@@ -176,38 +178,38 @@ Natureza:
 
 Valor Legal:
 - Original;
-- CÛpia Autenticada Administrativamente;
-- CÛpia Simples
+- C√≥pia Autenticada Administrativamente;
+- C√≥pia Simples
 
-GÍnero:
-- Textual (˙nico aceito pela API);
-- ¡udio;
-- VÌdeo
+G√™nero:
+- Textual (√∫nico aceito pela API);
+- √Åudio;
+- V√≠deo
 
-Como explicitado na etapa anterior, ao enviar o documento para captura, ele È encapsulado em um evento, que fica enfileirado aguardando o seu momento para ser executado.
+Como explicitado na etapa anterior, ao enviar o documento para captura, ele √© encapsulado em um evento, que fica enfileirado aguardando o seu momento para ser executado.
 
-Com a posse do identificador vocÍ pode consultar se o evento j· foi executado, retornando o identificador do documento que foi capturado, conforme o end point descrito [aqui](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Eventos-get_v2_eventos__idEvento_).
+Com a posse do identificador voc√™ pode consultar se o evento j√° foi executado, retornando o identificador do documento que foi capturado, conforme o end point descrito [aqui](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Eventos-get_v2_eventos__idEvento_).
 
 ### Documento capturado
 
-ApÛs um Documento ser capturado ele poder· ser consultado, validado, entre outros.
+Ap√≥s um Documento ser capturado ele poder√° ser consultado, validado, entre outros.
 
 Destacamos entre os demais end points:
-- Pode usar: se o usu·rio tem permiss„o para usar esse documento em processos, encaminhamentos, etc. [Clique aqui](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-get_v2_documentos__idDocumento__pode_usar).
-- ValidaÁ„o de Assinatura Digital: Para validar se esse arquivo È um arquivo capturado no E-Docs. Ele n„o valida a veracidade do conte˙do, apenas o armazenamento no E-Docs. [Clique aqui](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_assinatura_digital_valida).
+- Pode usar: se o usu√°rio tem permiss√£o para usar esse documento em processos, encaminhamentos, etc. [Clique aqui](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-get_v2_documentos__idDocumento__pode_usar).
+- Valida√ß√£o de Assinatura Digital: Para validar se esse arquivo √© um arquivo capturado no E-Docs. Ele n√£o valida a veracidade do conte√∫do, apenas o armazenamento no E-Docs. [Clique aqui](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_assinatura_digital_valida).
 
-Para os demais endpoints, consultar a documentaÁ„o completa [aqui](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-Documentos).
+Para os demais endpoints, consultar a documenta√ß√£o completa [aqui](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-Documentos).
 
-### InformaÁıes complementares para preenchimento
+### Informa√ß√µes complementares para preenchimento
 
-Abaixo as informaÁıes b·sicas necess·rias para o preenchimento de cadastros de Documentos:
+Abaixo as informa√ß√µes b√°sicas necess√°rias para o preenchimento de cadastros de Documentos:
 
-Para buscar patriarcas, Ûrg„os, setores, grupos de trabalho e comissıes, utilize [esses endpoints](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-Agente).
+Para buscar patriarcas, √≥rg√£os, setores, grupos de trabalho e comiss√µes, utilize [esses endpoints](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-Agente).
 
 Para buscar planos ativos e classes ativas, utilize [esses endpoints](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-ClassificacaoDocumental).
 
 Para buscar fundamentos legais, utilize [esse endpoint](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-FundamentosLegais-get_v2_fundamentos_legais__idPatriarca_).
 
-Para buscar informaÁıes do usu·rio logado, utilize [esses endpoints](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-Usuario).
+Para buscar informa√ß√µes do usu√°rio logado, utilize [esses endpoints](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-tag-Usuario).
 
-Clique [aqui](Consultas.md) para maiores informaÁıes.
+Clique [aqui](Consultas.md) para maiores informa√ß√µes.
