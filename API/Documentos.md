@@ -17,14 +17,14 @@ O procedimento padrão para registrar documentos no E-Docs consistem em:
   - b - Enviar o arquivo para o caminho acima (esse envio não será realizado através de end-point E-Docs) recebendo um objeto JSON com informações para as etapas posteriores;
 - **[3 - Registro do documento e captura](#registro-do-documento-e-captura)**
   - **[Se for arquivo nato-digital e com Assinatura Eletrônica E-Docs:](#se-for-arquivo-nato-digital-e-com-assinatura-digital-e-docs)**
-    - a - O documento deverá passar pela Fase de Assinatura, onde o Capturador (o cidadão ou servidor responsável pelo registro) informará o nome do arquivo criado na nuvem constante no JSON recebido na etapa anterior e todas as informações de metadados e quais serão os assinantes para o mesmo;
+    - a - O documento deverá passar pela Fase de Assinatura, onde o Capturador (o cidadão ou servidor responsável pelo registro) informará o identificador do arquivo criado na nuvem constante no JSON recebido na etapa anterior e todas as informações de metadados e quais serão os assinantes para o mesmo;
     - b - Todos os assinantes devem assinar ou recusar assinatura;
     - c - Após o último assinante se manifestar, o documento será enviado para captura, sendo retornado um identificador do evento dessa captura;
   - **[Se for arquivo nato digital e com apenas a Assinatura Eletrônica E-Docs do Capturador:](#se-for-arquivo-nato-digital-e-com-apenas-a-assinatura-digital-e-Docs-do-capturador)**
-    - a - O Capturador (o cidadão ou servidor responsável pelo registro) informará o nome do arquivo criado na nuvem constante no JSON recebido na etapa anterior e todas as informações de metadados;
+    - a - O Capturador (o cidadão ou servidor responsável pelo registro) informará o identificador do arquivo criado na nuvem constante no JSON recebido na etapa anterior e todas as informações de metadados;
     - b - O documento será assinado pelo capturador e posteriormente o documento será enviado para captura, sendo retornado um identificador do evento dessa captura;
   - **[Para todos os outros casos:](#para-todos-os-outros-casos)**
-    - a - O Capturador (o cidadão ou servidor responsável pelo registro) informará o nome do arquivo criado na nuvem constante no JSON recebido na etapa anterior e todas as informações de metadados;
+    - a - O Capturador (o cidadão ou servidor responsável pelo registro) informará o identificador do arquivo criado na nuvem constante no JSON recebido na etapa anterior e todas as informações de metadados;
     - b - O documento será enviado para captura, sendo retornado um identificador do evento dessa captura;
 - **[4 - Captura do documento:](#captura-do-documento)**
   - a - O E-Docs irá colocar o documento na fila de captura, em um objeto de evento, com o identificador recebido na etapa anterior;
@@ -124,7 +124,7 @@ Nesse caso, haverá multiplos assinantes, ou há um assinante, mas este não é 
 
 Em caso de o documento em fase de assinatura ter sido criado por um cidadão, todos os assinantes devem ser cidadãos.
 
-Portanto, o primeiro endpoint é o de envio do nome do arquivo criado na nuvem constante no JSON retornado na etapa anterior, tal qual das informações do Documento, conforme descrito [aqui se for um servidor](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_nato_digital_auto_assinado_servidor) ou [aqui se for um cidadão](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_nato_digital_auto_assinado_cidadao).
+Portanto, o primeiro endpoint é o de envio do identificador do arquivo criado na nuvem constante no JSON retornado na etapa anterior, tal qual das informações do Documento, conforme descrito [aqui se for um servidor](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_nato_digital_auto_assinado_servidor) ou [aqui se for um cidadão](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_nato_digital_auto_assinado_cidadao).
 
 Para maiores informações sobre restrição de acesso [clique aqui](RestricaoAcesso.md)
 
@@ -140,7 +140,7 @@ Arquivo nato-digital é um arquivo originado a partir de um documento digital, t
 
 Nesse caso, haverá apenas um assinante, e este é o próprio capturador, portanto a assinatura serão realizada automaticamente.
 
-Assim, o endpoint recebrá o nome do arquivo criado na nuvem constante no JSON retornado na etapa anterior, tal qual as informações do Documento, conforme descrito [aqui se for um servidor](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_fase_assinatura_enviar_servidor) ou [aqui se for um cidadão](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_fase_assinatura_enviar_cidadao).
+Assim, o endpoint recebrá o identificador do arquivo criado na nuvem constante no JSON retornado na etapa anterior, tal qual as informações do Documento, conforme descrito [aqui se for um servidor](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_fase_assinatura_enviar_servidor) ou [aqui se for um cidadão](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_fase_assinatura_enviar_cidadao).
 
 Para maiores informações sobre restrição de acesso [clique aqui](RestricaoAcesso.md)
 
@@ -156,7 +156,7 @@ Aqui se engloba os tipos de arquivo:
   - Se o arquivo nato-digital foi previamente assinado por uma assinatura digital padrão ICP-Brasil.
 - Arquivo digitalizado, que é um arquivo originado a partir de um documento físico em papel, digitalizado por foto ou dispositivo digitalizador de documentos tal qual scanner, no formato PDF.
 
-Assim, será enviado o nome do arquivo criado na nuvem constante no JSON retornado na etapa anterior, tal qual as informações do Documento, para o endpoint mais adequado:
+Assim, será enviado o identificador do arquivo criado na nuvem constante no JSON retornado na etapa anterior, tal qual as informações do Documento, para o endpoint mais adequado:
 
 - Nato-digital ICP-Brasil, [aqui se for um servidor](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_nato_digital_icp_brasil_servidor) ou [aqui se for um cidadão](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_nato_digital_icp_brasil_cidadao)
 - Nato-digital cópia, [aqui se for um servidor](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_nato_digital_copia_servidor) ou [aqui se for um cidadão](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-post_v2_documentos_capturar_nato_digital_copia_cidadao)
