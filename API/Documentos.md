@@ -44,7 +44,7 @@ A autenticação será através do padrão **Bearer Token**, utilizando o Access
 ### Envio de Arquivo para E-Docs
 A API do E-Docs aceita apenas arquivos texto, de extensão PDF.
 
-O primeiro endpoint a ser utilizado é o [pegar-url-envio](https://api.e-docs.es.gov.br/swagger/index.html?urls.primaryName=V2.0#operations-Documentos-get_v2_documentos_upload_arquivo_pegar_url_envio__tamanhoArquivo_) onde deve ser enviado exato do tamanho do arquivo a ser enviado, recebendo ao final uma url que será utilizada para o envio do arquivo físico.
+O primeiro endpoint a ser utilizado é o Gerar URL para upload, onde deve ser enviado o tamanho exato do arquivo a ser enviado, recebendo ao final uma url que será utilizada para o envio do arquivo físico.
 
 De posse desse endereço, deve-se realizar uma requisição POST direto para a nuvem do E-Docs, conforme exemplos de código abaixo.
 
