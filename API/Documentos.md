@@ -72,7 +72,7 @@ Agora o método para realizar a requisição POST (essa etapa deve ser realizada
 
 Observação: Este é um exemplo simplificado, considere as [recomendações](https://docs.microsoft.com/pt-br/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests) da Microsoft para utilização de HttpClient. 
 ```c#
-public async Task<bool> UploadFileToUrl(string url, UploadDataJsonModel data) {
+public async Task<bool> UploadFileToUrl(UploadDataJsonModel data) {
     //cria o cliente do request
     using var client = new HttpClient();
     client.DefaultRequestHeaders.Add("Accept", "application/json");
@@ -95,16 +95,17 @@ public async Task<bool> UploadFileToUrl(string url, UploadDataJsonModel data) {
     };
     data.Body.ToList().ForEach(parametro =>
     {
-        content.Add(new StringContent(paramstro.Value), parametro.Key);
+        content.Add(new StringContent(parametro.Value), parametro.Key);
     });
 
     //faz a requisição
-    using var response = await client.PostAsync(url, content);
+    using var response = await client.PostAsync(data.Url, content);
 
     //se tudo der certo vai retornar true
     return response.IsSuccessStatusCode;
 }
 ```
+*obs: o retorno do post não será um retorno de status 200 com conteúdo como é costumeiro, será apenas um retorno de status [204 No Content (sem conteúdo)](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/204).*
 
 Esse arquivo irá para uma área temporária aguardando os próximos passos de registro dos metadados do Documento. Caso não seja realizado esse próximo passo, esse arquivo será excluído do servidor, por falta de vínculo com um Documento registrado no E-Docs.
 
