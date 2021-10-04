@@ -13,6 +13,8 @@ Os documentos poderão ser classificados e ter seu acesso limitado nos seguintes
 Para que possa classificar uma informação contida em um documento, um usuário deve:
 
 - [Poder usar](PodeUsar.md) um documento
+- É capturador do documento
+- Para nível reservado, se for gestor no Órgão
 - Poder aprovar uma Classificação da Informação para o prazo estabelecido
 
 Caso o usuário não possa Classificar uma Informação, ele deverá  solicitar à alguma autoridade competente para tanto;
@@ -22,11 +24,11 @@ Uma vez classificado um ou mais documentos, uma Classificação da Informação 
 - Desclassificada - situação em que a data final da Classificação é o dia imediatamente anterior, deixando de limitar o acesso à informação. 
   - Para realizar esta ação, é necessário que o usuário possa:
     - usar os documentos contidos nesta Classificação
-    - aprovar uma Classificação da Informação no mesmo nível da que deseja desclassificar.
+    - aprovar uma Classificação da Informação no mesmo nível da que deseja desclassificar no Órgão que houve a classificação.
 - Reavaliada - situação em que a data final da Classificação poderá ser reduzida ou ampliada, limitada aos prazos máximos da legislação. 
   - Para realizar esta ação, é necessário que o usuário possa:
     - usar os documentos contidos nesta Classificação
-    - aprovar uma Classificação da Informação no mesmo nível da que deseja reavaliar
+    - aprovar uma Classificação da Informação no mesmo nível da que deseja reavaliar no Órgão que houve a classificação
     - aprovar uma Classificação da Informação no mesmo nível do novo prazo que deseja impor a Classificação
 
 

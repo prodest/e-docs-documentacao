@@ -11,7 +11,7 @@ No E-Docs, a permissão de leitura do conteúdo de um documento é regida pelo n
 - Público: O documento pode ser acessado por qualquer usuário logado no sistema E-Docs.
 - Organizacional: O documento pode ser acessado por qualquer servidor lotado em qualquer um dos órgãos por onde este documento transitar.
 - Sigiloso: O documento só pode ser acessado por quem o captura, quem o assina, quem o recebe (via encaminhamento ou processo administrativo).
-- Classificado: O documento só pode ser acessado por quem tiver permissão para visualizar documentos classificados. De acordo com a Lei de Acesso à Informação, pode ser classificado como Reservado, Secreto ou Ultrassecreto.
+- [Classificado](../Documentos/ClassificacaoInformacao.md): O documento só pode ser acessado por quem tiver permissão para visualizar documentos classificados. De acordo com a Lei de Acesso à Informação, pode ser classificado como Reservado, Secreto ou Ultrassecreto.
 
 Caso o usuário tente acessar um documento que não se enquadre nas regras de restrição de acesso descritas acima, ele não conseguirá ler o conteúdo do documento, e precisará solicitar o credenciamento ao mesmo.
 
