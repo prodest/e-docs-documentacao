@@ -77,6 +77,13 @@ public async Task<bool> UploadFileToUrl(UploadDataJsonModel data) {
     using var client = new HttpClient();
     client.DefaultRequestHeaders.Add("Accept", "application/json");
 
+    //adiviona os parâmetros retornados pelo JSON no content
+    using var content = new MultipartFormDataContent();
+    data.Body.ToList().ForEach(parametro =>
+    {
+        content.Add(new StringContent(parametro.Value), parametro.Key);
+    });
+
     //cria o content com o arquivo
     var arquivo = File.ReadAllBytes(data.File).ToArray();
     using MemoryStream memoryStream = new MemoryStream(arquivo);
@@ -87,16 +94,7 @@ public async Task<bool> UploadFileToUrl(UploadDataJsonModel data) {
         Name = "file", //nome do parâmetro do arquivo, não alterar
         FileName = data.File.Split('\\')[^1] //na prática esse nome aqui não será utilizado
     };
-
-    //adiviona os parâmetros retornados pelo JSON no content
-    using var content = new MultipartFormDataContent
-    {
-        streamContent
-    };
-    data.Body.ToList().ForEach(parametro =>
-    {
-        content.Add(new StringContent(parametro.Value), parametro.Key);
-    });
+    content.Add(streamContent);
 
     //faz a requisição
     using var response = await client.PostAsync(data.Url, content);
