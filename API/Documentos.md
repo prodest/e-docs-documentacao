@@ -94,6 +94,7 @@ public async Task<bool> UploadFileToUrl(UploadDataJsonModel data) {
         Name = "file", //nome do parâmetro do arquivo, não alterar
         FileName = data.File.Split('\\')[^1] //na prática esse nome aqui não será utilizado
     };
+    //o arquivo deve ser o últo parametro do content, visto que é o arquivo que será enviado e validado pelo MinIO/S3
     content.Add(streamContent);
 
     //faz a requisição
