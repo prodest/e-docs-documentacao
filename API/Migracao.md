@@ -12,6 +12,6 @@ Se você está utilizando a API do E-Docs V1, ela será descontinuada e você de
 Se você está utilizando a API do E-Docs V2, ela continuará ativa, porém com algumas alterações:
 
 - A URL para solicitação de envio de documentos foi alterada para `/v2/documentos/upload-arquivo/gerar-url-upload/{tamanhoArquivo}`
-- Essa nova URL possui um novo requisito, que é enviar o arquivo SEMPRE como último passo, conforme as [instruções atualizadas](Documento.md).
+- Essa nova URL possui um novo requisito, que é enviar o arquivo SEMPRE como último passo, conforme as [instruções atualizadas](Documentos.md).
 
 Caso você tenha dúvidas sobre a migração, entre em contato com o time de desenvolvimento o quanto antes.
