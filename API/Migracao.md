@@ -3,7 +3,7 @@
 Recentemente, o E-Docs passou por uma migração de infraestrutura, o que impactou diretamente a forma de integração via API.
 Devido a uma mudança no padrão do serviço MinIO, a URL de envio de arquivos foi modificada.
 
-A partir de 02/12/2024, não aceitaremos mais requisições via API para o E-Docs utilizando a infraestrutura antiga.
+A partir de 01/01/2025, não aceitaremos mais requisições via API para o E-Docs utilizando a infraestrutura antiga.
 
 Para continuar a integração com o E-Docs, siga as instruções abaixo:
 
